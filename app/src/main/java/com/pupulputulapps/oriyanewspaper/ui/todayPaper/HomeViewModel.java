@@ -28,11 +28,11 @@ public class HomeViewModel extends ViewModel {
     private MutableLiveData<List<NewsPaperWebModel>> searchNewsPaperModelData;
 
 
-    LiveData<List<NewsPaperWebModel>> getNewsPaperModelData(String keyword) {
+    LiveData<List<NewsPaperWebModel>> getNewsPaperModelData(String keyword, int offset) {
 
         if (newsPaperModelData == null && keyword.isEmpty()) {
             newsPaperModelData = new MutableLiveData<>();
-            loadNewsPaperModelData();
+            loadNewsPaperModelData(offset);
             return newsPaperModelData;
         }
 
@@ -47,10 +47,10 @@ public class HomeViewModel extends ViewModel {
     }
 
 
-    private void loadNewsPaperModelData() {
+    private void loadNewsPaperModelData(int offset) {
 
         ApiServiceWeb apiService = ApiClientWeb.getRetrofit().create(ApiServiceWeb.class);
-        Call<ArrayList<NewsPaperWebModel>> call = apiService.getNewsPapers("news_odia", 0);
+        Call<ArrayList<NewsPaperWebModel>> call = apiService.getNewsPapers("news_odia", offset);
         call.enqueue(new Callback<ArrayList<NewsPaperWebModel>>() {
             @Override
             public void onResponse(Call<ArrayList<NewsPaperWebModel>> call, Response<ArrayList<NewsPaperWebModel>> response) {

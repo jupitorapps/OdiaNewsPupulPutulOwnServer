@@ -2,6 +2,7 @@ package com.pupulputulapps.oriyanewspaper.ui.todayPaper;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +30,7 @@ import com.pupulputulapps.oriyanewspaper.NewsAdvancedWebViewActivity;
 import com.pupulputulapps.oriyanewspaper.R;
 import com.pupulputulapps.oriyanewspaper.Utils.ClickListenerInterface;
 import com.pupulputulapps.oriyanewspaper.Utils.CustomDialogClass;
+import com.pupulputulapps.oriyanewspaper.Utils.EndlessRecyclerViewScrollListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,8 +47,11 @@ public class HomeFragment extends Fragment implements ClickListenerInterface {
     private NewsPaperAdapter newsPaperAdapter;
     private InterstitialAd interstitialAd;
     private HomeViewModel homeViewModel;
+    private int offset = 0;
 
     private ArrayList<NewsPaperWebModel> newsListData = new ArrayList<>();
+
+    private EndlessRecyclerViewScrollListener scrollListener;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -63,7 +68,7 @@ public class HomeFragment extends Fragment implements ClickListenerInterface {
         recyclerView.hasFixedSize();
         newsPaperAdapter = new NewsPaperAdapter(this);
 
-        homeViewModel.getNewsPaperModelData("").observe(getViewLifecycleOwner(), new Observer<List<NewsPaperWebModel>>() {
+        homeViewModel.getNewsPaperModelData("",offset).observe(getViewLifecycleOwner(), new Observer<List<NewsPaperWebModel>>() {
             @Override
             public void onChanged(List<NewsPaperWebModel> newsPaperModels) {
 
@@ -76,6 +81,20 @@ public class HomeFragment extends Fragment implements ClickListenerInterface {
 
             }
         });
+
+        scrollListener = new EndlessRecyclerViewScrollListener(staggeredGridLayoutManager) {
+            @Override
+            public void onLoadMore(int page, int totalItemsCount, RecyclerView view) {
+
+                Log.d(TAG, "onLoadMore: ");
+
+                offset = offset + 15;
+
+
+            }
+        };
+
+        recyclerView.addOnScrollListener(scrollListener);
 
         AudienceNetworkAds.initialize(Objects.requireNonNull(getContext()));
         interstitialAd = new InterstitialAd(getContext(), getString(R.string.FAN_Placement_SearchResult_HomeFragment));
@@ -225,7 +244,7 @@ public class HomeFragment extends Fragment implements ClickListenerInterface {
 
     public void getSearchedNewsPaper(String searchQuery) {
 
-        homeViewModel.getNewsPaperModelData(searchQuery).observe(getViewLifecycleOwner(), new Observer<List<NewsPaperWebModel>>() {
+        homeViewModel.getNewsPaperModelData(searchQuery,offset).observe(getViewLifecycleOwner(), new Observer<List<NewsPaperWebModel>>() {
             @Override
             public void onChanged(List<NewsPaperWebModel> newsPaperModels) {
 
