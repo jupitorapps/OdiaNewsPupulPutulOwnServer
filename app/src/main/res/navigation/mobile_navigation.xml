@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/navigation_today_paper">
+
+    <fragment
+        android:id="@+id/navigation_today_paper"
+        android:name="com.pupulputulapps.oriyanewspaper.ui.todayPaper.HomeFragment"
+        android:label="@string/title_today_papers"
+        tools:layout="@layout/fragment_todaypaper" />
+
+    <fragment
+        android:id="@+id/navigation_latest_news"
+        android:name="com.pupulputulapps.oriyanewspaper.ui.latestNews.LatestNewsFragment"
+        android:label="@string/title_latest_news"
+        tools:layout="@layout/fragment_latestnews" />
+
+
+    <fragment
+        android:id="@+id/navigation_videos"
+        android:name="com.pupulputulapps.oriyanewspaper.ui.videos.VideosFragment"
+        android:label="@string/title_videos"
+        tools:layout="@layout/fragment_videos" />
+
+</navigation>

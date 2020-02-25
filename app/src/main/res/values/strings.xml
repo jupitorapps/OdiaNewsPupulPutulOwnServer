@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Odia News Paper</string>
+    <string name="title_today_papers">Today Papers</string>
+    <string name="title_latest_news">Latest News</string>
+    <string name="title_videos">Videos</string>
+    <string name="action_about_app">About App</string>
+    <string name="title_demo_text">This is a demo text for News Title</string>
+    <string name="description_demo_text">This is demo text for description. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there anything embarrassing hidden in the middle of text</string>
+    <string name="video_title_demo_text">Contrary to popular belief, Lorem Ipsum is not simply random text.</string>
+    <string name="channel_name_demo_text">Channel Name</string>
+    <string name="publish_date_demo_text">20 01 2020</string>
+    <string name="youtube_player_initialization_error">It seems either Google Play Service YouTube app is not installed in your device, please check. It is essential</string>
+    <string name="about_us">One App for all kinds of Odia News Papers and Magazines. This app aggregates on Odia News Source in one app, we do not own or have any kind of legal
+        relationship with any news agencies. We do not host any news, all news are hosted in owners website.
+        \nWe’ve made all attempts to add all available news papers. If we have left anything, please send us a mail, we’ll add it immediately. Please refer our privacy policy to know more.
+        \nIf you are a news agency and you want your news paper to be removed, please write to us with proof that you are the authorised person, we’ll remove immediately.
+
+\n\nThank You
+        \nDevelopment Team
+</string>
+    <string name="send_mail_button">Contact</string>
+    <string name="share_app_button">Share</string>
+    <string name="rate_app_button">Rate 5 Star</string>
+    <string name="share_app_message">Are you searching for any Odia Magazine or News Paper, this app has everything, must try now. </string>
+
+    <string name="mail_address">pupulputulapps@gmail.com</string>
+    <string name="mail_subject">Odia News Paper - PupulPutulApps</string>
+
+    <string name="all_rasta_over_error">Unable to get videos, please try later.</string>
+    <string name="share_error">Unable to Share, please try later</string>
+
+    <string name="FAN_Placement_SearchResult_HomeFragment">1154003668033487_1680625492037966</string>
+    <string name="FAN_Placement_other_fragments">1154003668033487_1679871272113388</string>
+
+    <string name="privacy_policy_url">http://odiacalendar.co.in/ads/privacy.html</string>
+
+    <string name="default_notification_channel_id">news</string>
+    <string name="default_notification_channel_title">News Notification</string>
+</resources>

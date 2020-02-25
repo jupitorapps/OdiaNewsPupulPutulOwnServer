@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "545918708112",
+    "firebase_url": "https://newsapps2020.firebaseio.com",
+    "project_id": "newsapps2020",
+    "storage_bucket": "newsapps2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545918708112:android:09f58edd5ac6a2cf196b15",
+        "android_client_info": {
+          "package_name": "com.pupulputulapps.oriyanewspaper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545918708112-h0agrtd0q5n1ldc774l2p8v5jn3nv1c8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACe_UPIIByR1XDphJeoHDb_5XKHE8JY2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545918708112-h0agrtd0q5n1ldc774l2p8v5jn3nv1c8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
