@@ -3,12 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_margin="4dp"
     android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/video_thumbnail"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +23,7 @@
         android:layout_margin="4dp"
         android:ellipsize="end"
         android:padding="4dp"
-        android:maxLines="2"
+        android:maxLines="4"
         android:text="@string/video_title_demo_text"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="parent"

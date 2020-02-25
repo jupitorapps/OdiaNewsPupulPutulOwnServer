@@ -60,7 +60,7 @@ public class NewsPaperAdapter extends RecyclerView.Adapter<NewsPaperAdapter.News
                 .error(R.drawable.error)
                 .into(holder.paper_logo);
 
-        holder.news_type.setText(currentNewsPaper.getType());
+      //  holder.news_type.setText(currentNewsPaper.getType());
 
     }
 
@@ -75,13 +75,13 @@ public class NewsPaperAdapter extends RecyclerView.Adapter<NewsPaperAdapter.News
 
     class NewsPaperViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private final ImageView paper_logo;
-        private final TextView news_type;
+      //  private final TextView news_type;
 
 
         NewsPaperViewHolder(@NonNull View itemView) {
             super(itemView);
             paper_logo = itemView.findViewById(R.id.paper_logo);
-            news_type = itemView.findViewById(R.id.news_type_tv);
+           // news_type = itemView.findViewById(R.id.news_type_tv);
             itemView.setOnClickListener(this);
         }
 

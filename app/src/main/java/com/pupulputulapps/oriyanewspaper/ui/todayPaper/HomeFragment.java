@@ -17,6 +17,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.facebook.ads.AudienceNetworkAds;
 import com.facebook.ads.InterstitialAd;
@@ -56,8 +57,9 @@ public class HomeFragment extends Fragment implements ClickListenerInterface {
         recyclerView = root.findViewById(R.id.recycler_view);
         progressBar = root.findViewById(R.id.progress_bar);
 
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
-        recyclerView.setLayoutManager(linearLayoutManager);
+     //   LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+        StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL);
+        recyclerView.setLayoutManager(staggeredGridLayoutManager);
         recyclerView.hasFixedSize();
         newsPaperAdapter = new NewsPaperAdapter(this);
 

@@ -17,14 +17,14 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.facebook.ads.Ad;
 import com.facebook.ads.AdError;
 import com.facebook.ads.AudienceNetworkAds;
 import com.facebook.ads.InterstitialAd;
 import com.facebook.ads.InterstitialAdExtendedListener;
-import com.pupulputulapps.oriyanewspaper.Adapters.ArticleAdapter;
+import com.pupulputulapps.oriyanewspaper.Adapters.LatestNewsAdapter;
 import com.pupulputulapps.oriyanewspaper.Models.LatestNewsModel;
 import com.pupulputulapps.oriyanewspaper.Models.NewsPaperWebModel;
 import com.pupulputulapps.oriyanewspaper.Models.VideosModel;
@@ -35,16 +35,15 @@ import com.pupulputulapps.oriyanewspaper.Utils.ClickListenerInterface;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LatestNewsFragment extends Fragment implements ClickListenerInterface, SwipeRefreshLayout.OnRefreshListener {
+public class LatestNewsFragment extends Fragment implements ClickListenerInterface {
 
     private LatestNewsViewModel latestNewsViewModel;
     private static final String TAG = "LatestNewsFragment TAGG";
 
     private RecyclerView recyclerView;
     private ProgressBar progressBar;
-    private ArticleAdapter mAdapter;
+    private LatestNewsAdapter mAdapter;
 
-    private SwipeRefreshLayout swipeLayout;
 
     private InterstitialAd interstitialAd;
 
@@ -58,10 +57,11 @@ public class LatestNewsFragment extends Fragment implements ClickListenerInterfa
         progressBar = root.findViewById(R.id.progress_bar);
 
 
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
-        recyclerView.setLayoutManager(linearLayoutManager);
+       // LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+        StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL);
+        recyclerView.setLayoutManager(staggeredGridLayoutManager);
         recyclerView.hasFixedSize();
-        mAdapter = new ArticleAdapter(this);
+        mAdapter = new LatestNewsAdapter(this);
 
         loadNewsFromRss();
 
@@ -132,8 +132,6 @@ public class LatestNewsFragment extends Fragment implements ClickListenerInterfa
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        swipeLayout = view.findViewById(R.id.swipe_container);
-        swipeLayout.setOnRefreshListener(this);
 
     }
 
@@ -198,10 +196,5 @@ public class LatestNewsFragment extends Fragment implements ClickListenerInterfa
 
     }
 
-    @Override
-    public void onRefresh() {
-        loadNewsFromRss();
-        swipeLayout.setRefreshing(false);
 
-    }
 }

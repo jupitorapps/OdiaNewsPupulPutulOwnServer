@@ -17,11 +17,11 @@ import com.pupulputulapps.oriyanewspaper.Utils.ClickListenerInterface;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHolder> {
+public class LatestNewsAdapter extends RecyclerView.Adapter<LatestNewsAdapter.ViewHolder> {
 
     private final ClickListenerInterface clickListener;
 
-    public ArticleAdapter(ClickListenerInterface clickListener) {
+    public LatestNewsAdapter(ClickListenerInterface clickListener) {
         this.clickListener = clickListener;
     }
 
@@ -39,7 +39,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHold
 
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         View view = layoutInflater.inflate(R.layout.news_rss_items, parent, false);
-        return new ArticleAdapter.ViewHolder(view);
+        return new LatestNewsAdapter.ViewHolder(view);
     }
 
     @Override
@@ -48,15 +48,21 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHold
         LatestNewsModel currentArticle = articleArrayList.get(position);
         holder.title.setText(currentArticle.getTitle());
         holder.description.setText(currentArticle.getDescription());
-        holder.pubDate.setText(Objects.requireNonNull(currentArticle.getPub_date()).replace(" GMT", ""));
+        String pubDate = currentArticle.getPub_date().substring(6,17);
+        holder.pubDate.setText(pubDate);
 
         String newsSource = currentArticle.getNews_source();
 
         holder.newsSource.setText(newsSource);
 
+        String image_link = currentArticle.getImage_link();
+        if (image_link.isEmpty()){
+            image_link = "no_image_found_in_db";
+        }
+
 
         Picasso.get()
-                .load(currentArticle.getImage_link())
+                .load(image_link)
                 .placeholder(R.drawable.placeholder_video)
                 .error(R.drawable.error)
                 .into(holder.image);

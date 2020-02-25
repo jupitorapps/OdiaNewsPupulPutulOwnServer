@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/pradeepbehera/Downloads/pupulputul_odia_news-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/5ac4726c6da0e15ccb1dd9dc2f9e3e07/navigation-ui-2.2.1/res/values/values.xml",
@@ -37,23 +37,6 @@
                         "endLines": "7373",
                         "endColumns": "24",
                         "endOffsets": "464599"
-                    }
-                },
-                {
-                    "source": "/Users/pradeepbehera/Downloads/pupulputul_odia_news-master/app/src/main/res/values/colors.xml",
-                    "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "153,55,102",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "194,97,148"
-                    },
-                    "to": {
-                        "startLines": "238,239,240",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "12652,12698,12745",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "12693,12740,12791"
                     }
                 },
                 {
@@ -112,6 +95,23 @@
                     }
                 },
                 {
+                    "source": "/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "153,55,102",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "194,97,148"
+                    },
+                    "to": {
+                        "startLines": "238,239,240",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "12652,12698,12745",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "12693,12740,12791"
+                    }
+                },
+                {
                     "source": "/Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a759defe38a51c155ce244e75c9a5a85/coordinatorlayout-1.1.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,6,16",
@@ -166,6 +166,23 @@
                         "endLines": "4,12,18,34,35,36,44,55,56,57,60,61,64,67,68,69,70,71,74,77,78,79,80,85,88,91,92,93,98,99,100,103,106,107,110,113,116,119,120,123,126,127,132,133,138,141,144,145,146,147,148,149,150,151,152,153,162,5810,5811,5812,6141",
                         "endColumns": "60,11,47,51,60,45,11,60,59,69,11,67,11,11,61,64,67,66,11,11,66,64,64,11,11,11,65,66,11,68,65,11,11,66,11,11,11,11,64,11,11,64,11,66,11,11,11,64,61,61,61,58,59,60,60,58,11,2575,131,3263,107",
                         "endOffsets": "292,583,915,1725,1786,1832,2191,2781,2841,2911,3044,3112,3241,3367,3429,3494,3562,3629,3752,3877,3944,4009,4074,4255,4376,4497,4563,4630,4840,4909,4975,5100,5226,5293,5419,5546,5671,5798,5863,5989,6112,6177,6385,6452,6632,6752,6872,6937,6999,7061,7123,7182,7242,7303,7364,7423,7798,377667,377799,381063,399580"
+                    }
+                },
+                {
+                    "source": "/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/build/generated/crashlytics/res/debug/values/com_crashlytics_build_id.xml",
+                    "from": {
+                        "startLines": "8",
+                        "startColumns": "0",
+                        "startOffsets": "303",
+                        "endColumns": "158",
+                        "endOffsets": "461"
+                    },
+                    "to": {
+                        "startLines": "894",
+                        "startColumns": "4",
+                        "startOffsets": "55330",
+                        "endColumns": "160",
+                        "endOffsets": "55486"
                     }
                 },
                 {
@@ -245,24 +262,7 @@
                     }
                 },
                 {
-                    "source": "/Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/ae9e929351871c15cca417dc86697313/transition-1.2.0/res/values/values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,95,142,185,240,287,341,393,442,503",
-                        "endColumns": "39,46,42,54,46,53,51,48,60,49",
-                        "endOffsets": "90,137,180,235,282,336,388,437,498,548"
-                    },
-                    "to": {
-                        "startLines": "764,765,781,784,785,803,804,805,806,807",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "47060,47100,48031,48170,48225,49109,49163,49215,49264,49325",
-                        "endColumns": "39,46,42,54,46,53,51,48,60,49",
-                        "endOffsets": "47095,47142,48069,48220,48267,49158,49210,49259,49320,49370"
-                    }
-                },
-                {
-                    "source": "/Users/pradeepbehera/Downloads/pupulputul_odia_news-master/app/src/main/res/values/strings.xml",
+                    "source": "/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/res/values/strings.xml",
                     "from": {
                         "startLines": "31,32,12,5,28,1,9,36,37,7,25,26,34,10,22,20,21,23,29,6,3,2,4,8,11",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -281,6 +281,40 @@
                     }
                 },
                 {
+                    "source": "/Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/ae9e929351871c15cca417dc86697313/transition-1.2.0/res/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,95,142,185,240,287,341,393,442,503",
+                        "endColumns": "39,46,42,54,46,53,51,48,60,49",
+                        "endOffsets": "90,137,180,235,282,336,388,437,498,548"
+                    },
+                    "to": {
+                        "startLines": "764,765,781,784,785,803,804,805,806,807",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "47060,47100,48031,48170,48225,49109,49163,49215,49264,49325",
+                        "endColumns": "39,46,42,54,46,53,51,48,60,49",
+                        "endOffsets": "47095,47142,48069,48220,48267,49158,49210,49259,49320,49370"
+                    }
+                },
+                {
+                    "source": "/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/build/generated/res/google-services/debug/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,306,388,492,601,721,817",
+                        "endColumns": "143,106,81,103,108,119,95,72",
+                        "endOffsets": "194,301,383,487,596,716,812,885"
+                    },
+                    "to": {
+                        "startLines": "915,922,923,924,925,926,927,1040",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "57970,59073,59180,59262,59366,59475,59595,73425",
+                        "endColumns": "143,106,81,103,108,119,95,72",
+                        "endOffsets": "58109,59175,59257,59361,59470,59590,59686,73493"
+                    }
+                },
+                {
                     "source": "/Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/c3ad3965959434953a35db3717da14fe/jetified-play-services-basement-17.0.0/res/values/values.xml",
                     "from": {
                         "startLines": "4,7",
@@ -295,23 +329,6 @@
                         "startOffsets": "50078,56531",
                         "endColumns": "67,166",
                         "endOffsets": "50141,56693"
-                    }
-                },
-                {
-                    "source": "/Users/pradeepbehera/Downloads/pupulputul_odia_news-master/app/build/generated/crashlytics/res/debug/values/com_crashlytics_build_id.xml",
-                    "from": {
-                        "startLines": "8",
-                        "startColumns": "0",
-                        "startOffsets": "303",
-                        "endColumns": "158",
-                        "endOffsets": "461"
-                    },
-                    "to": {
-                        "startLines": "894",
-                        "startColumns": "4",
-                        "startOffsets": "55330",
-                        "endColumns": "160",
-                        "endOffsets": "55486"
                     }
                 },
                 {
@@ -389,42 +406,6 @@
                     }
                 },
                 {
-                    "source": "/Users/pradeepbehera/Downloads/pupulputul_odia_news-master/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3,10",
-                        "startColumns": "4,4",
-                        "startOffsets": "54,374",
-                        "endLines": "8,12",
-                        "endColumns": "12,12",
-                        "endOffsets": "368,551"
-                    },
-                    "to": {
-                        "startLines": "1069,4565",
-                        "startColumns": "4,4",
-                        "startOffsets": "75656,306859",
-                        "endLines": "1074,4567",
-                        "endColumns": "12,12",
-                        "endOffsets": "75970,307036"
-                    }
-                },
-                {
-                    "source": "/Users/pradeepbehera/Downloads/pupulputul_odia_news-master/app/build/generated/res/google-services/debug/values/values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,306,388,492,601,721,817",
-                        "endColumns": "143,106,81,103,108,119,95,72",
-                        "endOffsets": "194,301,383,487,596,716,812,885"
-                    },
-                    "to": {
-                        "startLines": "915,922,923,924,925,926,927,1040",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "57970,59073,59180,59262,59366,59475,59595,73425",
-                        "endColumns": "143,106,81,103,108,119,95,72",
-                        "endOffsets": "58109,59175,59257,59361,59470,59590,59686,73493"
-                    }
-                },
-                {
                     "source": "/Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/682aa0f5e28a65218e04a22a27959658/navigation-common-2.2.1/res/values/values.xml",
                     "from": {
                         "startLines": "2,13,19,23,26",
@@ -441,6 +422,25 @@
                         "endLines": "6560,6566,6570,6573,6634",
                         "endColumns": "24,24,24,24,24",
                         "endOffsets": "419950,420194,420347,420480,424195"
+                    }
+                },
+                {
+                    "source": "/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3,10",
+                        "startColumns": "4,4",
+                        "startOffsets": "54,374",
+                        "endLines": "8,12",
+                        "endColumns": "12,12",
+                        "endOffsets": "368,551"
+                    },
+                    "to": {
+                        "startLines": "1069,4565",
+                        "startColumns": "4,4",
+                        "startOffsets": "75656,306859",
+                        "endLines": "1074,4567",
+                        "endColumns": "12,12",
+                        "endOffsets": "75970,307036"
                     }
                 },
                 {

@@ -50,418 +50,419 @@
 26-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:13:9-54
 27        android:supportsRtl="true"
 27-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:14:9-35
-28        android:theme="@style/AppTheme"
-28-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:15:9-40
-29        android:usesCleartextTraffic="true" >
-29-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:17:9-44
-30        <activity android:name="com.pupulputulapps.oriyanewspaper.AboutActivity" />
-30-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:20:9-83
-30-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:20:19-81
-31        <activity
-31-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:21:9-23:46
-32            android:name="com.pupulputulapps.oriyanewspaper.NewsAdvancedWebViewActivity"
-32-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:22:13-89
-33            android:launchMode="singleTop" />
-33-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:23:13-43
-34        <activity
-34-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:24:9-27:46
-35            android:name="com.pupulputulapps.oriyanewspaper.VideoPlayerActivity"
-35-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:25:13-81
-36            android:configChanges="keyboardHidden|orientation|screenSize"
-36-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:26:13-74
-37            android:launchMode="singleTop" />
-37-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:27:13-43
-38        <activity
-38-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:28:9-43:20
-39            android:name="com.pupulputulapps.oriyanewspaper.MainActivity"
-39-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:29:13-74
-40            android:label="@string/app_name"
-40-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:30:13-45
-41            android:launchMode="singleTop"
-41-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:31:13-43
-42            android:theme="@style/splashScreenTheme" >
-42-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:32:13-53
-43            <intent-filter>
-43-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:33:13-38:29
-44                <action android:name="android.intent.action.MAIN" />
-44-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:34:17-69
-44-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:34:25-66
-45
-46                <category android:name="android.intent.category.LAUNCHER" />
-46-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:35:17-77
-46-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:35:27-74
-47
-48                <action android:name="android.intent.action.SEARCH" />
-48-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:36:17-71
-48-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:36:25-68
-49            </intent-filter>
-50
-51            <meta-data
-51-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:40:13-41:53
-52                android:name="android.app.searchable"
-52-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:40:24-61
-53                android:resource="@xml/searchable" />
-53-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:41:17-51
-54        </activity>
-55
-56        <service android:name="com.pupulputulapps.oriyanewspaper.service.FireMsgService" >
-56-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:45:9-49:19
-56-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:45:18-56
-57            <intent-filter>
-57-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:46:13-48:29
-58                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-58-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:47:17-78
-58-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:47:25-75
-59            </intent-filter>
-60        </service>
-61
-62        <meta-data
-62-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:51:9-53:54
-63            android:name="com.google.firebase.messaging.default_notification_icon"
-63-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:52:13-83
-64            android:resource="@mipmap/ic_launcher" />
-64-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:53:13-51
-65        <meta-data
-65-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:54:9-56:54
-66            android:name="com.google.firebase.messaging.default_notification_color"
-66-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:55:13-84
-67            android:resource="@color/colorPrimary" />
-67-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:56:13-51
-68
-69        <service
-69-->[com.squareup.leakcanary:leakcanary-android:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/c3df5da964158b2e4220624e6e077620/leakcanary-android-2.2/AndroidManifest.xml:23:9-25:40
-70            android:name="leakcanary.internal.HeapAnalyzerService"
-70-->[com.squareup.leakcanary:leakcanary-android:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/c3df5da964158b2e4220624e6e077620/leakcanary-android-2.2/AndroidManifest.xml:24:13-67
-71            android:exported="false" />
-71-->[com.squareup.leakcanary:leakcanary-android:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/c3df5da964158b2e4220624e6e077620/leakcanary-android-2.2/AndroidManifest.xml:25:13-37
-72        <!--
-73             FirebaseMessagingService performs security checks at runtime,
-74             but set to not exported to explicitly avoid allowing another app to call it.
-75        -->
-76        <service
-76-->[com.google.firebase:firebase-messaging:20.1.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e3709176ac1547f129d86c6c0abea201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:28:9-34:19
-77            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-77-->[com.google.firebase:firebase-messaging:20.1.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e3709176ac1547f129d86c6c0abea201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:29:13-82
-78            android:exported="false" >
-78-->[com.google.firebase:firebase-messaging:20.1.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e3709176ac1547f129d86c6c0abea201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:30:13-37
-79            <intent-filter android:priority="-500" >
-79-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:46:13-48:29
-80                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-80-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:47:17-78
-80-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:47:25-75
-81            </intent-filter>
-82        </service>
-83        <service
-83-->[com.google.firebase:firebase-messaging:20.1.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e3709176ac1547f129d86c6c0abea201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:35:9-41:19
-84            android:name="com.google.firebase.components.ComponentDiscoveryService"
-84-->[com.google.firebase:firebase-messaging:20.1.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e3709176ac1547f129d86c6c0abea201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:36:13-84
-85            android:directBootAware="true"
-85-->[com.google.firebase:firebase-common:19.3.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/95b6ee45beb413d4732f4ee8b0240eef/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
-86            android:exported="false" >
-86-->[com.google.firebase:firebase-messaging:20.1.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e3709176ac1547f129d86c6c0abea201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:37:13-37
-87            <meta-data
-87-->[com.google.firebase:firebase-messaging:20.1.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e3709176ac1547f129d86c6c0abea201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:38:13-40:85
-88                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-88-->[com.google.firebase:firebase-messaging:20.1.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e3709176ac1547f129d86c6c0abea201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:39:17-119
-89                android:value="com.google.firebase.components.ComponentRegistrar" />
-89-->[com.google.firebase:firebase-messaging:20.1.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e3709176ac1547f129d86c6c0abea201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:40:17-82
-90            <meta-data
-90-->[com.google.android.gms:play-services-measurement-api:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/2ed564b48a8ee9acda291a2e9506d4d6/play-services-measurement-api-17.2.2/AndroidManifest.xml:30:13-32:85
-91                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-91-->[com.google.android.gms:play-services-measurement-api:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/2ed564b48a8ee9acda291a2e9506d4d6/play-services-measurement-api-17.2.2/AndroidManifest.xml:31:17-139
-92                android:value="com.google.firebase.components.ComponentRegistrar" />
-92-->[com.google.android.gms:play-services-measurement-api:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/2ed564b48a8ee9acda291a2e9506d4d6/play-services-measurement-api-17.2.2/AndroidManifest.xml:32:17-82
-93            <meta-data
-93-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/134527be648efb7eba9168a6142d35aa/firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
-94                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-94-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/134527be648efb7eba9168a6142d35aa/firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
-95                android:value="com.google.firebase.components.ComponentRegistrar" />
-95-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/134527be648efb7eba9168a6142d35aa/firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
-96            <meta-data
-96-->[com.google.firebase:firebase-iid:20.0.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/19a6484483828d73542f8ed1c39c6026/firebase-iid-20.0.2/AndroidManifest.xml:32:13-34:85
-97                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-97-->[com.google.firebase:firebase-iid:20.0.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/19a6484483828d73542f8ed1c39c6026/firebase-iid-20.0.2/AndroidManifest.xml:33:17-96
-98                android:value="com.google.firebase.components.ComponentRegistrar" />
-98-->[com.google.firebase:firebase-iid:20.0.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/19a6484483828d73542f8ed1c39c6026/firebase-iid-20.0.2/AndroidManifest.xml:34:17-82
-99        </service>
-100
-101        <provider
-101-->[com.squareup.picasso:picasso:2.71828] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/5598949dcae5f91ccd4d4dbfb4ae1ee1/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
-102            android:name="com.squareup.picasso.PicassoProvider"
-102-->[com.squareup.picasso:picasso:2.71828] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/5598949dcae5f91ccd4d4dbfb4ae1ee1/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
-103            android:authorities="com.pupulputulapps.oriyanewspaper.com.squareup.picasso"
-103-->[com.squareup.picasso:picasso:2.71828] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/5598949dcae5f91ccd4d4dbfb4ae1ee1/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
-104            android:exported="false" />
-104-->[com.squareup.picasso:picasso:2.71828] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/5598949dcae5f91ccd4d4dbfb4ae1ee1/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
-105
-106        <activity
-106-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:15:9-19:75
-107            android:name="com.facebook.ads.AudienceNetworkActivity"
-107-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:16:13-68
-108            android:configChanges="keyboardHidden|orientation|screenSize"
-108-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:17:13-74
-109            android:exported="false"
-109-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:18:13-37
-110            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-110-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:19:13-72
-111        <activity
-111-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:20:9-25:75
-112            android:name="com.facebook.ads.internal.ipc.RemoteANActivity"
-112-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:21:13-74
-113            android:configChanges="keyboardHidden|orientation|screenSize"
-113-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:22:13-74
-114            android:exported="false"
-114-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:23:13-37
-115            android:process=":adnw"
-115-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:24:13-36
-116            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-116-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:25:13-72
-117
-118        <service
-118-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:27:9-29:40
-119            android:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService"
-119-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:28:13-83
-120            android:exported="false" />
-120-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:29:13-37
-121        <service
-121-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:30:9-33:39
-122            android:name="com.facebook.ads.internal.ipc.AdsMessengerService"
-122-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:31:13-77
-123            android:exported="false"
-123-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:32:13-37
-124            android:process=":adnw" />
-124-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:33:13-36
-125
-126        <provider
-126-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:35:9-38:40
-127            android:name="com.facebook.ads.AudienceNetworkContentProvider"
-127-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:36:13-75
-128            android:authorities="com.pupulputulapps.oriyanewspaper.AudienceNetworkContentProvider"
-128-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:37:13-82
-129            android:exported="false" />
-129-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:38:13-37
-130        <provider
-130-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:29:9-37:20
-131            android:name="leakcanary.internal.LeakCanaryFileProvider"
-131-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:30:13-70
-132            android:authorities="com.squareup.leakcanary.fileprovider.com.pupulputulapps.oriyanewspaper"
-132-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:31:13-88
-133            android:exported="false"
-133-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:32:13-37
-134            android:grantUriPermissions="true" >
-134-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:33:13-47
-135            <meta-data
-135-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:34:13-36:66
-136                android:name="android.support.FILE_PROVIDER_PATHS"
-136-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:35:17-67
-137                android:resource="@xml/leak_canary_file_paths" />
-137-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:36:17-63
-138        </provider>
-139
-140        <activity
-140-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:39:9-44:66
-141            android:name="leakcanary.internal.activity.LeakActivity"
-141-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:40:13-69
-142            android:icon="@mipmap/leak_canary_icon"
-142-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:41:13-52
-143            android:label="@string/leak_canary_display_activity_label"
-143-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:42:13-71
-144            android:taskAffinity="com.squareup.leakcanary.com.pupulputulapps.oriyanewspaper"
-144-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:43:13-76
-145            android:theme="@style/leak_canary_LeakCanary.Base" />
-145-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:44:13-63
-146
-147        <activity-alias
-147-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:46:9-62:26
-148            android:name="leakcanary.internal.activity.LeakLauncherActivity"
-148-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:47:13-77
-149            android:banner="@drawable/leak_canary_tv_icon"
-149-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:48:13-59
-150            android:enabled="@bool/leak_canary_add_launcher_icon"
-150-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:49:13-66
-151            android:icon="@mipmap/leak_canary_icon"
-151-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:50:13-52
-152            android:label="@string/leak_canary_display_activity_label"
-152-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:51:13-71
-153            android:targetActivity="leakcanary.internal.activity.LeakActivity"
-153-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:52:13-79
-154            android:taskAffinity="com.squareup.leakcanary.com.pupulputulapps.oriyanewspaper"
-154-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:53:13-76
-155            android:theme="@style/leak_canary_LeakCanary.Base" >
-155-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:54:13-63
-156            <intent-filter>
-156-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:55:13-61:29
-157                <action android:name="android.intent.action.MAIN" />
-157-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:34:17-69
-157-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:34:25-66
-158
-159                <category android:name="android.intent.category.LAUNCHER" />
-159-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:35:17-77
-159-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:35:27-74
-160                <!-- Android TV launcher intent -->
-161                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-161-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:60:17-86
-161-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:60:27-83
-162            </intent-filter>
-163        </activity-alias>
-164
-165        <activity
-165-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:64:9-70:68
-166            android:name="leakcanary.internal.RequestStoragePermissionActivity"
-166-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:65:13-80
-167            android:excludeFromRecents="true"
-167-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:66:13-46
-168            android:icon="@mipmap/leak_canary_icon"
-168-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:67:13-52
-169            android:label="@string/leak_canary_storage_permission_activity_label"
-169-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:68:13-82
-170            android:taskAffinity="com.squareup.leakcanary.com.pupulputulapps.oriyanewspaper"
-170-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:69:13-76
-171            android:theme="@style/leak_canary_Theme.Transparent" />
-171-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:70:13-65
-172
-173        <receiver android:name="leakcanary.internal.NotificationReceiver" />
-173-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:72:9-77
-173-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:72:19-74
-174
-175        <provider
-175-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/439312bd921a643654bc3dcfac6838f4/jetified-leakcanary-object-watcher-android-2.2/AndroidManifest.xml:8:9-11:40
-176            android:name="leakcanary.internal.AppWatcherInstaller$MainProcess"
-176-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/439312bd921a643654bc3dcfac6838f4/jetified-leakcanary-object-watcher-android-2.2/AndroidManifest.xml:9:13-79
-177            android:authorities="com.pupulputulapps.oriyanewspaper.leakcanary-installer"
-177-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/439312bd921a643654bc3dcfac6838f4/jetified-leakcanary-object-watcher-android-2.2/AndroidManifest.xml:10:13-72
-178            android:exported="false" />
-178-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/439312bd921a643654bc3dcfac6838f4/jetified-leakcanary-object-watcher-android-2.2/AndroidManifest.xml:11:13-37
-179
-180        <receiver
-180-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:29:9-33:20
-181            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-181-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:30:13-85
-182            android:enabled="true"
-182-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:31:13-35
-183            android:exported="false" >
-183-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:32:13-37
-184        </receiver>
-185        <receiver
-185-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:34:9-42:20
-186            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-186-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:35:13-100
-187            android:enabled="true"
-187-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:36:13-35
-188            android:exported="true"
-188-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:37:13-36
-189            android:permission="android.permission.INSTALL_PACKAGES" >
-189-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:38:13-69
-190            <intent-filter>
-190-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:39:13-41:29
-191                <action android:name="com.android.vending.INSTALL_REFERRER" />
-191-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:40:17-79
-191-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:40:25-76
-192            </intent-filter>
-193        </receiver>
-194
-195        <service
-195-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:44:9-47:40
-196            android:name="com.google.android.gms.measurement.AppMeasurementService"
-196-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:45:13-84
-197            android:enabled="true"
-197-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:46:13-35
-198            android:exported="false" />
-198-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:47:13-37
-199        <service
-199-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:48:9-52:72
-200            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-200-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:49:13-87
-201            android:enabled="true"
-201-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:50:13-35
-202            android:exported="false"
-202-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:51:13-37
-203            android:permission="android.permission.BIND_JOB_SERVICE" />
-203-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:52:13-69
-204
-205        <receiver
-205-->[com.google.firebase:firebase-iid:20.0.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/19a6484483828d73542f8ed1c39c6026/firebase-iid-20.0.2/AndroidManifest.xml:37:9-44:20
-206            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-206-->[com.google.firebase:firebase-iid:20.0.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/19a6484483828d73542f8ed1c39c6026/firebase-iid-20.0.2/AndroidManifest.xml:38:13-78
-207            android:exported="true"
-207-->[com.google.firebase:firebase-iid:20.0.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/19a6484483828d73542f8ed1c39c6026/firebase-iid-20.0.2/AndroidManifest.xml:39:13-36
-208            android:permission="com.google.android.c2dm.permission.SEND" >
-208-->[com.google.firebase:firebase-iid:20.0.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/19a6484483828d73542f8ed1c39c6026/firebase-iid-20.0.2/AndroidManifest.xml:40:13-73
-209            <intent-filter>
-209-->[com.google.firebase:firebase-iid:20.0.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/19a6484483828d73542f8ed1c39c6026/firebase-iid-20.0.2/AndroidManifest.xml:41:13-43:29
-210                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-210-->[com.google.firebase:firebase-iid:20.0.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/19a6484483828d73542f8ed1c39c6026/firebase-iid-20.0.2/AndroidManifest.xml:42:17-81
-210-->[com.google.firebase:firebase-iid:20.0.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/19a6484483828d73542f8ed1c39c6026/firebase-iid-20.0.2/AndroidManifest.xml:42:25-78
-211            </intent-filter>
-212        </receiver>
-213
-214        <provider
-214-->[com.google.firebase:firebase-common:19.3.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/95b6ee45beb413d4732f4ee8b0240eef/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
-215            android:name="com.google.firebase.provider.FirebaseInitProvider"
-215-->[com.google.firebase:firebase-common:19.3.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/95b6ee45beb413d4732f4ee8b0240eef/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
-216            android:authorities="com.pupulputulapps.oriyanewspaper.firebaseinitprovider"
-216-->[com.google.firebase:firebase-common:19.3.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/95b6ee45beb413d4732f4ee8b0240eef/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
-217            android:exported="false"
-217-->[com.google.firebase:firebase-common:19.3.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/95b6ee45beb413d4732f4ee8b0240eef/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
-218            android:initOrder="100" />
-218-->[com.google.firebase:firebase-common:19.3.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/95b6ee45beb413d4732f4ee8b0240eef/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
-219
-220        <activity
-220-->[com.google.android.gms:play-services-base:17.0.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/51caba23d2ce3336aeb828581eaa2adb/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-221            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-221-->[com.google.android.gms:play-services-base:17.0.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/51caba23d2ce3336aeb828581eaa2adb/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-222            android:exported="false"
-222-->[com.google.android.gms:play-services-base:17.0.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/51caba23d2ce3336aeb828581eaa2adb/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-223            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-223-->[com.google.android.gms:play-services-base:17.0.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/51caba23d2ce3336aeb828581eaa2adb/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
-224
-225        <meta-data
-225-->[com.google.android.gms:play-services-basement:17.0.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/c3ad3965959434953a35db3717da14fe/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-226            android:name="com.google.android.gms.version"
-226-->[com.google.android.gms:play-services-basement:17.0.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/c3ad3965959434953a35db3717da14fe/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-227            android:value="@integer/google_play_services_version" />
-227-->[com.google.android.gms:play-services-basement:17.0.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/c3ad3965959434953a35db3717da14fe/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-228
-229        <provider
-229-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/ec3c4fac054578e98c2864d062be4f63/lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
-230            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-230-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/ec3c4fac054578e98c2864d062be4f63/lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
-231            android:authorities="com.pupulputulapps.oriyanewspaper.lifecycle-process"
-231-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/ec3c4fac054578e98c2864d062be4f63/lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
-232            android:exported="false"
-232-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/ec3c4fac054578e98c2864d062be4f63/lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
-233            android:multiprocess="true" />
-233-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/ec3c4fac054578e98c2864d062be4f63/lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
-234
-235        <service
-235-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e887bced409fd59be091224c7cd08328/transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
-236            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-236-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e887bced409fd59be091224c7cd08328/transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
-237            android:exported="false" >
-237-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e887bced409fd59be091224c7cd08328/transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
-238            <meta-data
-238-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e887bced409fd59be091224c7cd08328/transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
-239                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-239-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e887bced409fd59be091224c7cd08328/transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
-240                android:value="cct" />
-240-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e887bced409fd59be091224c7cd08328/transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
-241        </service>
-242        <service
-242-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/8a82102f8ae40edba978be903b44b889/transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
-243            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-243-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/8a82102f8ae40edba978be903b44b889/transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
-244            android:exported="false"
-244-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/8a82102f8ae40edba978be903b44b889/transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
-245            android:permission="android.permission.BIND_JOB_SERVICE" >
-245-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/8a82102f8ae40edba978be903b44b889/transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
-246        </service>
-247
-248        <receiver
-248-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/8a82102f8ae40edba978be903b44b889/transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
-249            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-249-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/8a82102f8ae40edba978be903b44b889/transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
-250            android:exported="false" />
-250-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/8a82102f8ae40edba978be903b44b889/transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
-251    </application>
-252
-253</manifest>
+28        android:testOnly="true"
+29        android:theme="@style/AppTheme"
+29-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:15:9-40
+30        android:usesCleartextTraffic="true" >
+30-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:17:9-44
+31        <activity android:name="com.pupulputulapps.oriyanewspaper.AboutActivity" />
+31-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:20:9-83
+31-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:20:19-81
+32        <activity
+32-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:21:9-23:46
+33            android:name="com.pupulputulapps.oriyanewspaper.NewsAdvancedWebViewActivity"
+33-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:22:13-89
+34            android:launchMode="singleTop" />
+34-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:23:13-43
+35        <activity
+35-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:24:9-27:46
+36            android:name="com.pupulputulapps.oriyanewspaper.VideoPlayerActivity"
+36-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:25:13-81
+37            android:configChanges="keyboardHidden|orientation|screenSize"
+37-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:26:13-74
+38            android:launchMode="singleTop" />
+38-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:27:13-43
+39        <activity
+39-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:28:9-43:20
+40            android:name="com.pupulputulapps.oriyanewspaper.MainActivity"
+40-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:29:13-74
+41            android:label="@string/app_name"
+41-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:30:13-45
+42            android:launchMode="singleTop"
+42-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:31:13-43
+43            android:theme="@style/splashScreenTheme" >
+43-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:32:13-53
+44            <intent-filter>
+44-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:33:13-38:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:34:17-69
+45-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:34:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:35:17-77
+47-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:35:27-74
+48
+49                <action android:name="android.intent.action.SEARCH" />
+49-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:36:17-71
+49-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:36:25-68
+50            </intent-filter>
+51
+52            <meta-data
+52-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:40:13-41:53
+53                android:name="android.app.searchable"
+53-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:40:24-61
+54                android:resource="@xml/searchable" />
+54-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:41:17-51
+55        </activity>
+56
+57        <service android:name="com.pupulputulapps.oriyanewspaper.service.FireMsgService" >
+57-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:45:9-49:19
+57-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:45:18-56
+58            <intent-filter>
+58-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:46:13-48:29
+59                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+59-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:47:17-78
+59-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:47:25-75
+60            </intent-filter>
+61        </service>
+62
+63        <meta-data
+63-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:51:9-53:54
+64            android:name="com.google.firebase.messaging.default_notification_icon"
+64-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:52:13-83
+65            android:resource="@mipmap/ic_launcher" />
+65-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:53:13-51
+66        <meta-data
+66-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:54:9-56:54
+67            android:name="com.google.firebase.messaging.default_notification_color"
+67-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:55:13-84
+68            android:resource="@color/colorPrimary" />
+68-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:56:13-51
+69
+70        <service
+70-->[com.squareup.leakcanary:leakcanary-android:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/c3df5da964158b2e4220624e6e077620/leakcanary-android-2.2/AndroidManifest.xml:23:9-25:40
+71            android:name="leakcanary.internal.HeapAnalyzerService"
+71-->[com.squareup.leakcanary:leakcanary-android:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/c3df5da964158b2e4220624e6e077620/leakcanary-android-2.2/AndroidManifest.xml:24:13-67
+72            android:exported="false" />
+72-->[com.squareup.leakcanary:leakcanary-android:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/c3df5da964158b2e4220624e6e077620/leakcanary-android-2.2/AndroidManifest.xml:25:13-37
+73        <!--
+74             FirebaseMessagingService performs security checks at runtime,
+75             but set to not exported to explicitly avoid allowing another app to call it.
+76        -->
+77        <service
+77-->[com.google.firebase:firebase-messaging:20.1.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e3709176ac1547f129d86c6c0abea201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:28:9-34:19
+78            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+78-->[com.google.firebase:firebase-messaging:20.1.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e3709176ac1547f129d86c6c0abea201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:29:13-82
+79            android:exported="false" >
+79-->[com.google.firebase:firebase-messaging:20.1.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e3709176ac1547f129d86c6c0abea201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:30:13-37
+80            <intent-filter android:priority="-500" >
+80-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:46:13-48:29
+81                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+81-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:47:17-78
+81-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:47:25-75
+82            </intent-filter>
+83        </service>
+84        <service
+84-->[com.google.firebase:firebase-messaging:20.1.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e3709176ac1547f129d86c6c0abea201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:35:9-41:19
+85            android:name="com.google.firebase.components.ComponentDiscoveryService"
+85-->[com.google.firebase:firebase-messaging:20.1.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e3709176ac1547f129d86c6c0abea201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:36:13-84
+86            android:directBootAware="true"
+86-->[com.google.firebase:firebase-common:19.3.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/95b6ee45beb413d4732f4ee8b0240eef/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+87            android:exported="false" >
+87-->[com.google.firebase:firebase-messaging:20.1.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e3709176ac1547f129d86c6c0abea201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:37:13-37
+88            <meta-data
+88-->[com.google.firebase:firebase-messaging:20.1.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e3709176ac1547f129d86c6c0abea201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:38:13-40:85
+89                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+89-->[com.google.firebase:firebase-messaging:20.1.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e3709176ac1547f129d86c6c0abea201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:39:17-119
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[com.google.firebase:firebase-messaging:20.1.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e3709176ac1547f129d86c6c0abea201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:40:17-82
+91            <meta-data
+91-->[com.google.android.gms:play-services-measurement-api:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/2ed564b48a8ee9acda291a2e9506d4d6/play-services-measurement-api-17.2.2/AndroidManifest.xml:30:13-32:85
+92                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+92-->[com.google.android.gms:play-services-measurement-api:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/2ed564b48a8ee9acda291a2e9506d4d6/play-services-measurement-api-17.2.2/AndroidManifest.xml:31:17-139
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[com.google.android.gms:play-services-measurement-api:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/2ed564b48a8ee9acda291a2e9506d4d6/play-services-measurement-api-17.2.2/AndroidManifest.xml:32:17-82
+94            <meta-data
+94-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/134527be648efb7eba9168a6142d35aa/firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+95                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+95-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/134527be648efb7eba9168a6142d35aa/firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/134527be648efb7eba9168a6142d35aa/firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+97            <meta-data
+97-->[com.google.firebase:firebase-iid:20.0.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/19a6484483828d73542f8ed1c39c6026/firebase-iid-20.0.2/AndroidManifest.xml:32:13-34:85
+98                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+98-->[com.google.firebase:firebase-iid:20.0.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/19a6484483828d73542f8ed1c39c6026/firebase-iid-20.0.2/AndroidManifest.xml:33:17-96
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.firebase:firebase-iid:20.0.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/19a6484483828d73542f8ed1c39c6026/firebase-iid-20.0.2/AndroidManifest.xml:34:17-82
+100        </service>
+101
+102        <provider
+102-->[com.squareup.picasso:picasso:2.71828] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/5598949dcae5f91ccd4d4dbfb4ae1ee1/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+103            android:name="com.squareup.picasso.PicassoProvider"
+103-->[com.squareup.picasso:picasso:2.71828] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/5598949dcae5f91ccd4d4dbfb4ae1ee1/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+104            android:authorities="com.pupulputulapps.oriyanewspaper.com.squareup.picasso"
+104-->[com.squareup.picasso:picasso:2.71828] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/5598949dcae5f91ccd4d4dbfb4ae1ee1/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+105            android:exported="false" />
+105-->[com.squareup.picasso:picasso:2.71828] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/5598949dcae5f91ccd4d4dbfb4ae1ee1/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+106
+107        <activity
+107-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:15:9-19:75
+108            android:name="com.facebook.ads.AudienceNetworkActivity"
+108-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:16:13-68
+109            android:configChanges="keyboardHidden|orientation|screenSize"
+109-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:17:13-74
+110            android:exported="false"
+110-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:18:13-37
+111            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+111-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:19:13-72
+112        <activity
+112-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:20:9-25:75
+113            android:name="com.facebook.ads.internal.ipc.RemoteANActivity"
+113-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:21:13-74
+114            android:configChanges="keyboardHidden|orientation|screenSize"
+114-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:22:13-74
+115            android:exported="false"
+115-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:23:13-37
+116            android:process=":adnw"
+116-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:24:13-36
+117            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+117-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:25:13-72
+118
+119        <service
+119-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:27:9-29:40
+120            android:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService"
+120-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:28:13-83
+121            android:exported="false" />
+121-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:29:13-37
+122        <service
+122-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:30:9-33:39
+123            android:name="com.facebook.ads.internal.ipc.AdsMessengerService"
+123-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:31:13-77
+124            android:exported="false"
+124-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:32:13-37
+125            android:process=":adnw" />
+125-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:33:13-36
+126
+127        <provider
+127-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:35:9-38:40
+128            android:name="com.facebook.ads.AudienceNetworkContentProvider"
+128-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:36:13-75
+129            android:authorities="com.pupulputulapps.oriyanewspaper.AudienceNetworkContentProvider"
+129-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:37:13-82
+130            android:exported="false" />
+130-->[com.facebook.android:audience-network-sdk:5.6.1] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/a4002276c7ed1017fff176c20bcf14ee/jetified-audience-network-sdk-5.6.1/AndroidManifest.xml:38:13-37
+131        <provider
+131-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:29:9-37:20
+132            android:name="leakcanary.internal.LeakCanaryFileProvider"
+132-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:30:13-70
+133            android:authorities="com.squareup.leakcanary.fileprovider.com.pupulputulapps.oriyanewspaper"
+133-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:31:13-88
+134            android:exported="false"
+134-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:32:13-37
+135            android:grantUriPermissions="true" >
+135-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:33:13-47
+136            <meta-data
+136-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:34:13-36:66
+137                android:name="android.support.FILE_PROVIDER_PATHS"
+137-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:35:17-67
+138                android:resource="@xml/leak_canary_file_paths" />
+138-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:36:17-63
+139        </provider>
+140
+141        <activity
+141-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:39:9-44:66
+142            android:name="leakcanary.internal.activity.LeakActivity"
+142-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:40:13-69
+143            android:icon="@mipmap/leak_canary_icon"
+143-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:41:13-52
+144            android:label="@string/leak_canary_display_activity_label"
+144-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:42:13-71
+145            android:taskAffinity="com.squareup.leakcanary.com.pupulputulapps.oriyanewspaper"
+145-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:43:13-76
+146            android:theme="@style/leak_canary_LeakCanary.Base" />
+146-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:44:13-63
+147
+148        <activity-alias
+148-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:46:9-62:26
+149            android:name="leakcanary.internal.activity.LeakLauncherActivity"
+149-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:47:13-77
+150            android:banner="@drawable/leak_canary_tv_icon"
+150-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:48:13-59
+151            android:enabled="@bool/leak_canary_add_launcher_icon"
+151-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:49:13-66
+152            android:icon="@mipmap/leak_canary_icon"
+152-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:50:13-52
+153            android:label="@string/leak_canary_display_activity_label"
+153-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:51:13-71
+154            android:targetActivity="leakcanary.internal.activity.LeakActivity"
+154-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:52:13-79
+155            android:taskAffinity="com.squareup.leakcanary.com.pupulputulapps.oriyanewspaper"
+155-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:53:13-76
+156            android:theme="@style/leak_canary_LeakCanary.Base" >
+156-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:54:13-63
+157            <intent-filter>
+157-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:55:13-61:29
+158                <action android:name="android.intent.action.MAIN" />
+158-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:34:17-69
+158-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:34:25-66
+159
+160                <category android:name="android.intent.category.LAUNCHER" />
+160-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:35:17-77
+160-->/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/src/main/AndroidManifest.xml:35:27-74
+161                <!-- Android TV launcher intent -->
+162                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+162-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:60:17-86
+162-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:60:27-83
+163            </intent-filter>
+164        </activity-alias>
+165
+166        <activity
+166-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:64:9-70:68
+167            android:name="leakcanary.internal.RequestStoragePermissionActivity"
+167-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:65:13-80
+168            android:excludeFromRecents="true"
+168-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:66:13-46
+169            android:icon="@mipmap/leak_canary_icon"
+169-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:67:13-52
+170            android:label="@string/leak_canary_storage_permission_activity_label"
+170-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:68:13-82
+171            android:taskAffinity="com.squareup.leakcanary.com.pupulputulapps.oriyanewspaper"
+171-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:69:13-76
+172            android:theme="@style/leak_canary_Theme.Transparent" />
+172-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:70:13-65
+173
+174        <receiver android:name="leakcanary.internal.NotificationReceiver" />
+174-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:72:9-77
+174-->[com.squareup.leakcanary:leakcanary-android-core:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/4cdd94476440a71ef48d0ccb2271a410/jetified-leakcanary-android-core-2.2/AndroidManifest.xml:72:19-74
+175
+176        <provider
+176-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/439312bd921a643654bc3dcfac6838f4/jetified-leakcanary-object-watcher-android-2.2/AndroidManifest.xml:8:9-11:40
+177            android:name="leakcanary.internal.AppWatcherInstaller$MainProcess"
+177-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/439312bd921a643654bc3dcfac6838f4/jetified-leakcanary-object-watcher-android-2.2/AndroidManifest.xml:9:13-79
+178            android:authorities="com.pupulputulapps.oriyanewspaper.leakcanary-installer"
+178-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/439312bd921a643654bc3dcfac6838f4/jetified-leakcanary-object-watcher-android-2.2/AndroidManifest.xml:10:13-72
+179            android:exported="false" />
+179-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/439312bd921a643654bc3dcfac6838f4/jetified-leakcanary-object-watcher-android-2.2/AndroidManifest.xml:11:13-37
+180
+181        <receiver
+181-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:29:9-33:20
+182            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+182-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:30:13-85
+183            android:enabled="true"
+183-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:31:13-35
+184            android:exported="false" >
+184-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:32:13-37
+185        </receiver>
+186        <receiver
+186-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:34:9-42:20
+187            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+187-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:35:13-100
+188            android:enabled="true"
+188-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:36:13-35
+189            android:exported="true"
+189-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:37:13-36
+190            android:permission="android.permission.INSTALL_PACKAGES" >
+190-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:38:13-69
+191            <intent-filter>
+191-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:39:13-41:29
+192                <action android:name="com.android.vending.INSTALL_REFERRER" />
+192-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:40:17-79
+192-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:40:25-76
+193            </intent-filter>
+194        </receiver>
+195
+196        <service
+196-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:44:9-47:40
+197            android:name="com.google.android.gms.measurement.AppMeasurementService"
+197-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:45:13-84
+198            android:enabled="true"
+198-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:46:13-35
+199            android:exported="false" />
+199-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:47:13-37
+200        <service
+200-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:48:9-52:72
+201            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+201-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:49:13-87
+202            android:enabled="true"
+202-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:50:13-35
+203            android:exported="false"
+203-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:51:13-37
+204            android:permission="android.permission.BIND_JOB_SERVICE" />
+204-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/825d8e9c0bc73b45f809c622a3f6080a/play-services-measurement-17.2.2/AndroidManifest.xml:52:13-69
+205
+206        <receiver
+206-->[com.google.firebase:firebase-iid:20.0.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/19a6484483828d73542f8ed1c39c6026/firebase-iid-20.0.2/AndroidManifest.xml:37:9-44:20
+207            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+207-->[com.google.firebase:firebase-iid:20.0.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/19a6484483828d73542f8ed1c39c6026/firebase-iid-20.0.2/AndroidManifest.xml:38:13-78
+208            android:exported="true"
+208-->[com.google.firebase:firebase-iid:20.0.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/19a6484483828d73542f8ed1c39c6026/firebase-iid-20.0.2/AndroidManifest.xml:39:13-36
+209            android:permission="com.google.android.c2dm.permission.SEND" >
+209-->[com.google.firebase:firebase-iid:20.0.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/19a6484483828d73542f8ed1c39c6026/firebase-iid-20.0.2/AndroidManifest.xml:40:13-73
+210            <intent-filter>
+210-->[com.google.firebase:firebase-iid:20.0.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/19a6484483828d73542f8ed1c39c6026/firebase-iid-20.0.2/AndroidManifest.xml:41:13-43:29
+211                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+211-->[com.google.firebase:firebase-iid:20.0.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/19a6484483828d73542f8ed1c39c6026/firebase-iid-20.0.2/AndroidManifest.xml:42:17-81
+211-->[com.google.firebase:firebase-iid:20.0.2] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/19a6484483828d73542f8ed1c39c6026/firebase-iid-20.0.2/AndroidManifest.xml:42:25-78
+212            </intent-filter>
+213        </receiver>
+214
+215        <provider
+215-->[com.google.firebase:firebase-common:19.3.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/95b6ee45beb413d4732f4ee8b0240eef/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+216            android:name="com.google.firebase.provider.FirebaseInitProvider"
+216-->[com.google.firebase:firebase-common:19.3.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/95b6ee45beb413d4732f4ee8b0240eef/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+217            android:authorities="com.pupulputulapps.oriyanewspaper.firebaseinitprovider"
+217-->[com.google.firebase:firebase-common:19.3.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/95b6ee45beb413d4732f4ee8b0240eef/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+218            android:exported="false"
+218-->[com.google.firebase:firebase-common:19.3.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/95b6ee45beb413d4732f4ee8b0240eef/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+219            android:initOrder="100" />
+219-->[com.google.firebase:firebase-common:19.3.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/95b6ee45beb413d4732f4ee8b0240eef/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+220
+221        <activity
+221-->[com.google.android.gms:play-services-base:17.0.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/51caba23d2ce3336aeb828581eaa2adb/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+222            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+222-->[com.google.android.gms:play-services-base:17.0.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/51caba23d2ce3336aeb828581eaa2adb/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+223            android:exported="false"
+223-->[com.google.android.gms:play-services-base:17.0.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/51caba23d2ce3336aeb828581eaa2adb/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+224            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+224-->[com.google.android.gms:play-services-base:17.0.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/51caba23d2ce3336aeb828581eaa2adb/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+225
+226        <meta-data
+226-->[com.google.android.gms:play-services-basement:17.0.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/c3ad3965959434953a35db3717da14fe/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+227            android:name="com.google.android.gms.version"
+227-->[com.google.android.gms:play-services-basement:17.0.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/c3ad3965959434953a35db3717da14fe/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+228            android:value="@integer/google_play_services_version" />
+228-->[com.google.android.gms:play-services-basement:17.0.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/c3ad3965959434953a35db3717da14fe/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+229
+230        <provider
+230-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/ec3c4fac054578e98c2864d062be4f63/lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+231            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+231-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/ec3c4fac054578e98c2864d062be4f63/lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+232            android:authorities="com.pupulputulapps.oriyanewspaper.lifecycle-process"
+232-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/ec3c4fac054578e98c2864d062be4f63/lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+233            android:exported="false"
+233-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/ec3c4fac054578e98c2864d062be4f63/lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+234            android:multiprocess="true" />
+234-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/ec3c4fac054578e98c2864d062be4f63/lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+235
+236        <service
+236-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e887bced409fd59be091224c7cd08328/transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
+237            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+237-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e887bced409fd59be091224c7cd08328/transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
+238            android:exported="false" >
+238-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e887bced409fd59be091224c7cd08328/transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
+239            <meta-data
+239-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e887bced409fd59be091224c7cd08328/transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
+240                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+240-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e887bced409fd59be091224c7cd08328/transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
+241                android:value="cct" />
+241-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e887bced409fd59be091224c7cd08328/transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
+242        </service>
+243        <service
+243-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/8a82102f8ae40edba978be903b44b889/transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
+244            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+244-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/8a82102f8ae40edba978be903b44b889/transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
+245            android:exported="false"
+245-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/8a82102f8ae40edba978be903b44b889/transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
+246            android:permission="android.permission.BIND_JOB_SERVICE" >
+246-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/8a82102f8ae40edba978be903b44b889/transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
+247        </service>
+248
+249        <receiver
+249-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/8a82102f8ae40edba978be903b44b889/transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
+250            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+250-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/8a82102f8ae40edba978be903b44b889/transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
+251            android:exported="false" />
+251-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/8a82102f8ae40edba978be903b44b889/transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
+252    </application>
+253
+254</manifest>

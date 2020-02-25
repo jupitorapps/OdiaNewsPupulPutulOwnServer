@@ -1790,7 +1790,6 @@ id navigation_latest_news
 id navigation_today_paper
 id navigation_videos
 id never
-id news_type_tv
 id noScroll
 id none
 id normal
