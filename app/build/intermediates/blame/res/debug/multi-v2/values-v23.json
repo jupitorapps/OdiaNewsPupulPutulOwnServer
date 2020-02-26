@@ -4,18 +4,7 @@
             "outputFile": "/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/2a06cd643dc54d3c6c47d90b94b86d39/appcompat-1.2.0-alpha02/res/values-v23/values-v23.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,190,325,400,487,1371,2267,2386,2513,2735,2959,3074,3181,3294",
-                        "endLines": "2,3,4,5,19,33,34,35,38,42,43,44,45,49",
-                        "endColumns": "134,134,74,86,12,12,118,126,12,12,114,106,112,12",
-                        "endOffsets": "185,320,395,482,1366,2262,2381,2508,2730,2954,3069,3176,3289,3519"
-                    }
-                },
-                {
-                    "source": "/Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/5fbf1ecce601acb42c03170ebbbf819b/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "source": "/Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/bbef1b499a2c129b901cc0a44d026b2c/cardview-1.0.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -34,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/bea66c77b18e41fd63d71110eccf6d7a/material-1.1.0/res/values-v23/values-v23.xml",
+                    "source": "/Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/7779f6935695d36941de3b02cdce4a9f/material-1.1.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,6",
                         "startColumns": "4,4",
@@ -50,6 +39,17 @@
                         "endLines": "56,60",
                         "endColumns": "10,10",
                         "endOffsets": "3934,4207"
+                    }
+                },
+                {
+                    "source": "/Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e75f0e597b27b7a6fea099e07fcfe4a9/appcompat-1.2.0-alpha02/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,190,325,400,487,1371,2267,2386,2513,2735,2959,3074,3181,3294",
+                        "endLines": "2,3,4,5,19,33,34,35,38,42,43,44,45,49",
+                        "endColumns": "134,134,74,86,12,12,118,126,12,12,114,106,112,12",
+                        "endOffsets": "185,320,395,482,1366,2262,2381,2508,2730,2954,3069,3176,3289,3519"
                     }
                 }
             ]

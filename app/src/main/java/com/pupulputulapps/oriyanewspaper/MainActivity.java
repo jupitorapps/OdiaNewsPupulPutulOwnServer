@@ -14,7 +14,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
-import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
@@ -23,16 +22,16 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.facebook.ads.Ad;
 import com.facebook.ads.AdError;
-import com.facebook.ads.AdSettings;
 import com.facebook.ads.AudienceNetworkAds;
 import com.facebook.ads.InterstitialAd;
 import com.facebook.ads.InterstitialAdExtendedListener;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.messaging.FirebaseMessaging;
+import com.pupulputulapps.oriyanewspaper.ui.latestNews.LatestNewsFragment;
 import com.pupulputulapps.oriyanewspaper.ui.todayPaper.HomeFragment;
+import com.pupulputulapps.oriyanewspaper.ui.videos.VideosFragment;
 
 import es.dmoral.toasty.Toasty;
 
@@ -151,13 +150,7 @@ public class MainActivity extends AppCompatActivity {
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
          fragmentName = navHostFragment.getChildFragmentManager().getFragments().get(0).toString();
 
-      //  Log.d(TAG, "onCreate: TEST: "+   navHostFragment.getChildFragmentManager().getFragments().get(0).toString());
-
-        if (fragmentName.contains("Home")){
-            Log.d(TAG, "onCreateOptionsMenu: This is HomeFragment");
-
             // Get the SearchView and set the searchable configuration
-
             SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
             SearchView searchView = (SearchView) menu.findItem(R.id.action_search).getActionView();
             // Assumes current activity is the searchable activity
@@ -165,30 +158,18 @@ public class MainActivity extends AppCompatActivity {
             searchView.setIconifiedByDefault(true); // Do not iconify the widget; expand it by default
 
             searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-
                 @Override
                 public boolean onQueryTextChange(String newText) {
-                    // Log.d("onQueryTextChange", "called: " + newText);
-                    // searchPapers(newText);
                     return false;
                 }
 
                 @Override
                 public boolean onQueryTextSubmit(String query) {
-                    // start acitivy here
-                    Log.d(TAG, "onQueryTextSubmit: Search is: " + query);
                     searchPapers(query);
-
-                    if (interstitialAd != null && interstitialAd.isAdLoaded()){
-                        interstitialAd.show();
-                    }
-
                     return false;
                 }
 
             });
-
-
 
             searchView.setOnCloseListener(new SearchView.OnCloseListener() {
                 @Override
@@ -199,14 +180,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
-
-            
-        } else if (fragmentName.contains("Latest")){
-            Log.d(TAG, "onCreateOptionsMenu: This is Latest Fragment");
-
-        } else{
-            Log.d(TAG, "onCreateOptionsMenu: This is Video Fragment");
-        }
 
 
 
@@ -233,28 +206,22 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    @Override
-    protected void onNewIntent(Intent intent) {
-        super.onNewIntent(intent);
-
-        Log.d(TAG, "onNewIntent: ");
-        if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
-            String query = intent.getStringExtra(SearchManager.QUERY);
-            // doMySearch(query);
-            Log.d(TAG, "onCreate: Search Query: " + query);
-        }
-    }
-
-
     private void searchPapers(String searchQuery){
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
 
+
         if (navHostFragment != null) {
 
-            Log.d(TAG, "searchPapers: Get Fragment: "+navHostFragment.getChildFragmentManager().getFragments().get(0).getId());
-            HomeFragment homeFragment = (HomeFragment) navHostFragment.getChildFragmentManager().getFragments().get(0);
-            homeFragment.getSearchedNewsPaper(searchQuery);
-
+            if (fragmentName.contains("Home")){
+                HomeFragment homeFragment = (HomeFragment) navHostFragment.getChildFragmentManager().getFragments().get(0);
+                homeFragment.getNewsPapers(searchQuery);
+            } else if (fragmentName.contains("Latest")){
+                LatestNewsFragment latestNewsFragment = (LatestNewsFragment) navHostFragment.getChildFragmentManager().getFragments().get(0);
+                latestNewsFragment.loadNewsFromRss(searchQuery);
+            } else {
+                VideosFragment videosFragment = (VideosFragment) navHostFragment.getChildFragmentManager().getFragments().get(0);
+                videosFragment.loadVideosFromServer(searchQuery);
+            }
 
         } else {
             Log.d(TAG, "onQueryTextSubmit: Nav Host fragment is null");

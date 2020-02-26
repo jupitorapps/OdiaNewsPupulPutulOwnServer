@@ -28,6 +28,9 @@ public class LatestNewsAdapter extends RecyclerView.Adapter<LatestNewsAdapter.Vi
     private final ArrayList<LatestNewsModel> articleArrayList = new ArrayList<>();
 
     public void loadArticlesFromRssFeed(ArrayList<LatestNewsModel> data) {
+        if (!articleArrayList.isEmpty()){
+            articleArrayList.clear();
+        }
         this.articleArrayList.addAll(data);
         notifyDataSetChanged();
     }
@@ -48,7 +51,7 @@ public class LatestNewsAdapter extends RecyclerView.Adapter<LatestNewsAdapter.Vi
         LatestNewsModel currentArticle = articleArrayList.get(position);
         holder.title.setText(currentArticle.getTitle());
         holder.description.setText(currentArticle.getDescription());
-        String pubDate = currentArticle.getPub_date().substring(6,17);
+        String pubDate = currentArticle.getPub_date().substring(6,currentArticle.getPub_date().length()-1);
         holder.pubDate.setText(pubDate);
 
         String newsSource = currentArticle.getNews_source();

@@ -1,5 +1,6 @@
 package com.pupulputulapps.oriyanewspaper.ui.videos;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,12 +10,14 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
@@ -37,7 +40,9 @@ import com.pupulputulapps.oriyanewspaper.VideoPlayerActivity;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
+import es.dmoral.toasty.Toasty;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -66,71 +71,17 @@ public class VideosFragment extends Fragment implements ClickListenerInterface {
         progressBar = root.findViewById(R.id.progress_bar);
 
         // LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
-        StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
-        recyclerView.setLayoutManager(staggeredGridLayoutManager);
+        // StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
+
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 2);
+        recyclerView.setLayoutManager(gridLayoutManager);
         recyclerView.hasFixedSize();
         videosAdapter = new VideosAdapter(this);
 
-        loadVideosFromServer();
+        loadVideosFromServer("");
 
-        AudienceNetworkAds.initialize(getContext());
+        AudienceNetworkAds.initialize(Objects.requireNonNull(getContext()));
         interstitialAd = new InterstitialAd(getContext(), getString(R.string.FAN_Placement_other_fragments));
-
-        interstitialAd.setAdListener(new InterstitialAdExtendedListener() {
-            @Override
-            public void onInterstitialActivityDestroyed() {
-
-            }
-
-            @Override
-            public void onInterstitialDisplayed(Ad ad) {
-
-            }
-
-            @Override
-            public void onInterstitialDismissed(Ad ad) {
-
-            }
-
-            @Override
-            public void onError(Ad ad, AdError adError) {
-                Log.d(TAG, "onError: " + adError.getErrorMessage());
-
-            }
-
-            @Override
-            public void onAdLoaded(Ad ad) {
-
-                Log.d(TAG, "onAdLoaded: " + ad.getPlacementId());
-
-            }
-
-            @Override
-            public void onAdClicked(Ad ad) {
-
-            }
-
-            @Override
-            public void onLoggingImpression(Ad ad) {
-
-            }
-
-            @Override
-            public void onRewardedAdCompleted() {
-
-            }
-
-            @Override
-            public void onRewardedAdServerSucceeded() {
-
-            }
-
-            @Override
-            public void onRewardedAdServerFailed() {
-
-            }
-        });
-
         interstitialAd.loadAd();
 
         getRasta();
@@ -138,15 +89,14 @@ public class VideosFragment extends Fragment implements ClickListenerInterface {
         return root;
     }
 
-    private void loadVideosFromServer() {
+    public void loadVideosFromServer(String searchQuery) {
 
-        videosViewModel.getVideos("").observe(getViewLifecycleOwner(), new Observer<List<VideosModel>>() {
+        videosViewModel.getVideos(searchQuery).observe(getViewLifecycleOwner(), new Observer<List<VideosModel>>() {
             @Override
             public void onChanged(List<VideosModel> videosModels) {
                 Log.d(TAG, "onChanged: Videos: " + videosModels.get(0).getTitle());
 
-                ArrayList<VideosModel> videosArrayList = new ArrayList<>();
-                videosArrayList.addAll(videosModels);
+                ArrayList<VideosModel> videosArrayList = new ArrayList<>(videosModels);
 
                 recyclerView.setAdapter(videosAdapter);
                 videosAdapter.loadVideos(videosArrayList);
@@ -214,6 +164,13 @@ public class VideosFragment extends Fragment implements ClickListenerInterface {
     }
 
     private void openVideo(ArrayList<VideosModel> videoItemClassArrayList, int clickedPosition) {
+
+        if (videoItemClassArrayList.get(0).getYt_video_id().isEmpty()) {
+            Toasty.error(Objects.requireNonNull(getContext()), "Please Search a new video, Showing latest videos", Toast.LENGTH_LONG).show();
+            loadVideosFromServer("");
+            return;
+        }
+
         Intent intent = new Intent(getActivity(), VideoPlayerActivity.class);
         intent.putExtra("video_list", videoItemClassArrayList);
         intent.putExtra("clicked_position", clickedPosition);

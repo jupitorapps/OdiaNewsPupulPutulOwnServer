@@ -2,7 +2,6 @@ package com.pupulputulapps.oriyanewspaper.ui.todayPaper;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,9 +15,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
-import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.facebook.ads.AudienceNetworkAds;
 import com.facebook.ads.InterstitialAd;
@@ -61,103 +60,41 @@ public class HomeFragment extends Fragment implements ClickListenerInterface {
 
         recyclerView = root.findViewById(R.id.recycler_view);
         progressBar = root.findViewById(R.id.progress_bar);
+        // setHasOptionsMenu(true);
 
-     //   LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
-        StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL);
-        recyclerView.setLayoutManager(staggeredGridLayoutManager);
+        // LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+        //  StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
+
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 2);
+        recyclerView.setLayoutManager(gridLayoutManager);
         recyclerView.hasFixedSize();
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
         newsPaperAdapter = new NewsPaperAdapter(this);
 
-        homeViewModel.getNewsPaperModelData("",offset).observe(getViewLifecycleOwner(), new Observer<List<NewsPaperWebModel>>() {
+        getNewsPapers("");
+
+        AudienceNetworkAds.initialize(Objects.requireNonNull(getContext()));
+        interstitialAd = new InterstitialAd(getContext(), getString(R.string.FAN_Placement_SearchResult_HomeFragment));
+        interstitialAd.loadAd();
+
+        return root;
+    }
+
+    public void getNewsPapers(String searchQuery) {
+
+        homeViewModel.getNewsPaperModelData(searchQuery).observe(getViewLifecycleOwner(), new Observer<List<NewsPaperWebModel>>() {
             @Override
             public void onChanged(List<NewsPaperWebModel> newsPaperModels) {
 
                 progressBar.setVisibility(View.GONE);
-
-                newsListData = new ArrayList<>();
+                newsListData.clear();
                 newsListData.addAll(newsPaperModels);
                 recyclerView.setAdapter(newsPaperAdapter);
                 newsPaperAdapter.loadNewsPapers(newsListData);
-
+                newsPaperAdapter.notifyDataSetChanged();
             }
         });
 
-        scrollListener = new EndlessRecyclerViewScrollListener(staggeredGridLayoutManager) {
-            @Override
-            public void onLoadMore(int page, int totalItemsCount, RecyclerView view) {
-
-                Log.d(TAG, "onLoadMore: ");
-
-                offset = offset + 15;
-
-
-            }
-        };
-
-        recyclerView.addOnScrollListener(scrollListener);
-
-        AudienceNetworkAds.initialize(Objects.requireNonNull(getContext()));
-        interstitialAd = new InterstitialAd(getContext(), getString(R.string.FAN_Placement_SearchResult_HomeFragment));
-
-//        interstitialAd.setAdListener(new InterstitialAdExtendedListener() {
-//            @Override
-//            public void onInterstitialActivityDestroyed() {
-//
-//            }
-//
-//            @Override
-//            public void onInterstitialDisplayed(Ad ad) {
-//
-//            }
-//
-//            @Override
-//            public void onInterstitialDismissed(Ad ad) {
-//
-//            }
-//
-//            @Override
-//            public void onError(Ad ad, AdError adError) {
-//                Log.d(TAG, "onError: " + adError.getErrorMessage());
-//
-//            }
-//
-//            @Override
-//            public void onAdLoaded(Ad ad) {
-//
-//                Log.d(TAG, "onAdLoaded: " + ad.getPlacementId());
-//
-//            }
-//
-//            @Override
-//            public void onAdClicked(Ad ad) {
-//
-//            }
-//
-//            @Override
-//            public void onLoggingImpression(Ad ad) {
-//
-//            }
-//
-//            @Override
-//            public void onRewardedAdCompleted() {
-//
-//            }
-//
-//            @Override
-//            public void onRewardedAdServerSucceeded() {
-//
-//            }
-//
-//            @Override
-//            public void onRewardedAdServerFailed() {
-//
-//            }
-//        });
-
-        interstitialAd.loadAd();
-
-
-        return root;
     }
 
     @Override
@@ -219,17 +156,15 @@ public class HomeFragment extends Fragment implements ClickListenerInterface {
 
     private void openPaper(String paperLink, String paperName) {
 
-        if (!paperLink.isEmpty()) {
-
-            Intent intent = new Intent(getActivity(), NewsAdvancedWebViewActivity.class);
-            intent.putExtra("url", paperLink);
-            intent.putExtra("paper_name", paperName);
-            startActivity(intent);
-        } else {
-            Toasty.error(Objects.requireNonNull(getContext()), "No Newspaper found, Please search again with different term", Toast.LENGTH_LONG, true).show();
-
+        if (paperLink.isEmpty()) {
+            Toasty.error(Objects.requireNonNull(getContext()), "No Newspaper found, showing all newspapers", Toast.LENGTH_LONG, true).show();
+            getNewsPapers("");
+            return;
         }
-
+        Intent intent = new Intent(getActivity(), NewsAdvancedWebViewActivity.class);
+        intent.putExtra("url", paperLink);
+        intent.putExtra("paper_name", paperName);
+        startActivity(intent);
     }
 
     @Override
@@ -240,24 +175,6 @@ public class HomeFragment extends Fragment implements ClickListenerInterface {
     @Override
     public void onRssNewsItemClick(LatestNewsModel article) {
         //for latest news fragment
-    }
-
-    public void getSearchedNewsPaper(String searchQuery) {
-
-        homeViewModel.getNewsPaperModelData(searchQuery,offset).observe(getViewLifecycleOwner(), new Observer<List<NewsPaperWebModel>>() {
-            @Override
-            public void onChanged(List<NewsPaperWebModel> newsPaperModels) {
-
-                progressBar.setVisibility(View.GONE);
-                newsListData.clear();
-                newsListData.addAll(newsPaperModels);
-                recyclerView.setAdapter(newsPaperAdapter);
-                newsPaperAdapter.loadNewsPapers(newsListData);
-                newsPaperAdapter.notifyDataSetChanged();
-
-            }
-        });
-
     }
 
 

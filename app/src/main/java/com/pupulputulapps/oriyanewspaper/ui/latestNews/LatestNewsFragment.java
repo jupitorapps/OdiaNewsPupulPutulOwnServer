@@ -1,5 +1,6 @@
 package com.pupulputulapps.oriyanewspaper.ui.latestNews;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,12 +10,14 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
@@ -34,6 +37,9 @@ import com.pupulputulapps.oriyanewspaper.Utils.ClickListenerInterface;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+
+import es.dmoral.toasty.Toasty;
 
 public class LatestNewsFragment extends Fragment implements ClickListenerInterface {
 
@@ -58,71 +64,17 @@ public class LatestNewsFragment extends Fragment implements ClickListenerInterfa
 
 
        // LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
-        StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL);
-        recyclerView.setLayoutManager(staggeredGridLayoutManager);
+
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 2);
+       // StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL);
+        recyclerView.setLayoutManager(gridLayoutManager);
         recyclerView.hasFixedSize();
         mAdapter = new LatestNewsAdapter(this);
 
-        loadNewsFromRss();
+        loadNewsFromRss("");
 
         AudienceNetworkAds.initialize(getContext());
         interstitialAd = new InterstitialAd(getContext(), getString(R.string.FAN_Placement_other_fragments));
-
-        interstitialAd.setAdListener(new InterstitialAdExtendedListener() {
-            @Override
-            public void onInterstitialActivityDestroyed() {
-
-            }
-
-            @Override
-            public void onInterstitialDisplayed(Ad ad) {
-
-            }
-
-            @Override
-            public void onInterstitialDismissed(Ad ad) {
-
-            }
-
-            @Override
-            public void onError(Ad ad, AdError adError) {
-                Log.d(TAG, "onError: " + adError.getErrorMessage());
-
-            }
-
-            @Override
-            public void onAdLoaded(Ad ad) {
-
-                Log.d(TAG, "onAdLoaded: " + ad.getPlacementId());
-
-            }
-
-            @Override
-            public void onAdClicked(Ad ad) {
-
-            }
-
-            @Override
-            public void onLoggingImpression(Ad ad) {
-
-            }
-
-            @Override
-            public void onRewardedAdCompleted() {
-
-            }
-
-            @Override
-            public void onRewardedAdServerSucceeded() {
-
-            }
-
-            @Override
-            public void onRewardedAdServerFailed() {
-
-            }
-        });
-
         interstitialAd.loadAd();
 
         return root;
@@ -148,18 +100,13 @@ public class LatestNewsFragment extends Fragment implements ClickListenerInterfa
         Log.d(TAG, "onCreateOptionsMenu: Latest News Fragment");
     }
 
-    private void loadNewsFromRss() {
+    public void loadNewsFromRss(String keyword) {
 
-       // latestNewsViewModel.getLatestNewsModelData("");
-
-        latestNewsViewModel.getLatestNewsModelData("").observe(getViewLifecycleOwner(), new Observer<List<LatestNewsModel>>() {
+        latestNewsViewModel.getLatestNewsModelData(keyword).observe(getViewLifecycleOwner(), new Observer<List<LatestNewsModel>>() {
             @Override
             public void onChanged(List<LatestNewsModel> latestNewsModels) {
-                Log.d(TAG, "onChanged: Latest News: " + latestNewsModels.get(0).getTitle());
-
 
                 ArrayList<LatestNewsModel> articlesArrayList = new ArrayList<>(latestNewsModels);
-
                 recyclerView.setAdapter(mAdapter);
                 mAdapter.loadArticlesFromRssFeed(articlesArrayList);
                 mAdapter.notifyDataSetChanged();
@@ -187,6 +134,12 @@ public class LatestNewsFragment extends Fragment implements ClickListenerInterfa
         if (interstitialAd != null && interstitialAd.isAdLoaded()) {
             interstitialAd.show();
 
+        }
+
+        if (article.getNews_link().isEmpty()) {
+            Toasty.error(Objects.requireNonNull(getContext()), "Please search again with different term, Showing latest news", Toast.LENGTH_LONG, true).show();
+           loadNewsFromRss("");
+            return;
         }
 
         Intent intent = new Intent(getActivity(), NewsAdvancedWebViewActivity.class);

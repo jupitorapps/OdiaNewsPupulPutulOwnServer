@@ -32,6 +32,10 @@ public class VideosAdapter extends RecyclerView.Adapter<VideosAdapter.VideosView
 
     public void loadVideos(ArrayList<VideosModel> data) {
 
+        if (!videosList.isEmpty()){
+            videosList.clear();
+        }
+
         if (data != null){
             this.videosList.addAll(data);
             notifyDataSetChanged();

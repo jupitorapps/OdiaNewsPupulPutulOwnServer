@@ -22,8 +22,15 @@ public interface ApiServiceWeb {
     @GET("getLatestNews.php")
     Call<ArrayList<LatestNewsModel>> getLatestNews(@Query("dbname") String dbname, @Query("offset") int offset);
 
+    @GET("searchLatestNews.php")
+    Call<ArrayList<LatestNewsModel>> searchLatestNews(@Query("dbname") String dbname, @Query("offset") int offset, @Query("keyword") String keyword);
+
+
     @GET("getNewsVideos.php")
     Call<ArrayList<VideosModel>> getNewsVideos(@Query("dbname") String dbname, @Query("offset") int offset);
+
+    @GET("searchVideos.php")
+    Call<ArrayList<VideosModel>> searchVideos(@Query("dbname") String dbname, @Query("offset") int offset, @Query("keyword") String keyword);
 
     @GET("getRasta.php")
     Call<ArrayList<RastaModel>> getRasta(@Query("dbname") String dbname);

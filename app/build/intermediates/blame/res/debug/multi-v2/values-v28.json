@@ -4,7 +4,7 @@
             "outputFile": "/Users/pradeepbehera/Desktop/AppDevelopment/PupulPutulApps/OriyaNewsPaper/2020/pupulputul_odia_news-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v28/values-v28.xml",
             "map": [
                 {
-                    "source": "/Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/bea66c77b18e41fd63d71110eccf6d7a/material-1.1.0/res/values-v28/values-v28.xml",
+                    "source": "/Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/7779f6935695d36941de3b02cdce4a9f/material-1.1.0/res/values-v28/values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/2a06cd643dc54d3c6c47d90b94b86d39/appcompat-1.2.0-alpha02/res/values-v28/values-v28.xml",
+                    "source": "/Users/pradeepbehera/.gradle/caches/transforms-2/files-2.1/e75f0e597b27b7a6fea099e07fcfe4a9/appcompat-1.2.0-alpha02/res/values-v28/values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,8",
                         "startColumns": "4,4,4,4",

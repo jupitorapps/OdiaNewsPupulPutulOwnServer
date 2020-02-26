@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/rss_news_thumbnail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:scaleType="fitXY"
         android:minHeight="50dp"
         app:layout_constraintEnd_toEndOf="parent"
