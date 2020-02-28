@@ -1445,6 +1445,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable action_home
 drawable action_info_icon
 drawable avd_hide_password
 drawable avd_show_password
@@ -1483,6 +1484,8 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable error
+drawable fav_black
+drawable fav_red
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_calendar_black_24dp
@@ -1550,6 +1553,8 @@ drawable placeholder
 drawable placeholder_video
 drawable round_corner
 drawable splash
+drawable star_blank
+drawable star_fill
 drawable test_custom_background
 drawable text_background
 drawable toast_frame
@@ -1610,6 +1615,8 @@ id action_bar_title
 id action_container
 id action_context_bar
 id action_divider
+id action_fav
+id action_favourite
 id action_image
 id action_menu_divider
 id action_menu_presenter
@@ -1679,6 +1686,7 @@ id expand_activities_button
 id expanded_menu
 id fab_share
 id fade
+id fav_icon
 id fill
 id fill_horizontal
 id fill_vertical
@@ -2085,6 +2093,7 @@ layout text_view_with_theme_line_height
 layout text_view_without_line_height
 layout toast_layout
 layout video_item
+menu action_webview_menu
 menu actionmenu
 menu bottom_nav_menu
 mipmap ic_launcher

@@ -62,11 +62,11 @@ public class LatestNewsFragment extends Fragment implements ClickListenerInterfa
         recyclerView = root.findViewById(R.id.recycler_view);
         progressBar = root.findViewById(R.id.progress_bar);
 
-
-       // LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+        setHasOptionsMenu(true);
+        // LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 2);
-       // StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL);
+        // StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(gridLayoutManager);
         recyclerView.hasFixedSize();
         mAdapter = new LatestNewsAdapter(this);
@@ -96,7 +96,8 @@ public class LatestNewsFragment extends Fragment implements ClickListenerInterfa
     @Override
     public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
-        // menu.findItem(R.id.action_search).setVisible(false);
+        menu.findItem(R.id.action_favourite).setVisible(false);
+
         Log.d(TAG, "onCreateOptionsMenu: Latest News Fragment");
     }
 
@@ -110,7 +111,7 @@ public class LatestNewsFragment extends Fragment implements ClickListenerInterfa
                 recyclerView.setAdapter(mAdapter);
                 mAdapter.loadArticlesFromRssFeed(articlesArrayList);
                 mAdapter.notifyDataSetChanged();
-                Log.d(TAG, "onChanged ArrayList: "+articlesArrayList.get(0).getTitle());
+                Log.d(TAG, "onChanged ArrayList: " + articlesArrayList.get(0).getTitle());
                 progressBar.setVisibility(View.GONE);
 
             }
@@ -138,16 +139,16 @@ public class LatestNewsFragment extends Fragment implements ClickListenerInterfa
 
         if (article.getNews_link().isEmpty()) {
             Toasty.error(Objects.requireNonNull(getContext()), "Please search again with different term, Showing latest news", Toast.LENGTH_LONG, true).show();
-           loadNewsFromRss("");
+            loadNewsFromRss("");
             return;
         }
 
         Intent intent = new Intent(getActivity(), NewsAdvancedWebViewActivity.class);
         intent.putExtra("url", article.getNews_link());
         intent.putExtra("paper_name", article.getTitle());
+        intent.putExtra("source","LatestNewsFragment");
         startActivity(intent);
 
     }
-
 
 }

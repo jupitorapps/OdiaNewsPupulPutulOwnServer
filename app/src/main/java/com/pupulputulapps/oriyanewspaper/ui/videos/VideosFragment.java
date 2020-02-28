@@ -2,6 +2,7 @@ package com.pupulputulapps.oriyanewspaper.ui.videos;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -36,11 +37,13 @@ import com.pupulputulapps.oriyanewspaper.R;
 import com.pupulputulapps.oriyanewspaper.Utils.ApiClientWeb;
 import com.pupulputulapps.oriyanewspaper.Utils.ApiServiceWeb;
 import com.pupulputulapps.oriyanewspaper.Utils.ClickListenerInterface;
+import com.pupulputulapps.oriyanewspaper.Utils.Utils;
 import com.pupulputulapps.oriyanewspaper.VideoPlayerActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.UUID;
 
 import es.dmoral.toasty.Toasty;
 import retrofit2.Call;
@@ -59,6 +62,9 @@ public class VideosFragment extends Fragment implements ClickListenerInterface {
 
     private InterstitialAd interstitialAd;
 
+    private static String uniqueID = null;
+    private static final String PREF_UNIQUE_ID = "PREF_UNIQUE_ID";
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -66,6 +72,8 @@ public class VideosFragment extends Fragment implements ClickListenerInterface {
         videosViewModel =
                 ViewModelProviders.of(this).get(VideosViewModel.class);
         View root = inflater.inflate(R.layout.fragment_videos, container, false);
+
+        setHasOptionsMenu(true);
 
         recyclerView = root.findViewById(R.id.recycler_view);
         progressBar = root.findViewById(R.id.progress_bar);
@@ -88,6 +96,8 @@ public class VideosFragment extends Fragment implements ClickListenerInterface {
 
         return root;
     }
+
+
 
     public void loadVideosFromServer(String searchQuery) {
 
@@ -121,6 +131,7 @@ public class VideosFragment extends Fragment implements ClickListenerInterface {
         super.onCreateOptionsMenu(menu, inflater);
         // menu.findItem(R.id.action_search).setVisible(false);
         Log.d(TAG, "onCreateOptionsMenu: Video Fragment");
+        menu.findItem(R.id.action_favourite).setVisible(false);
     }
 
 
@@ -177,4 +188,12 @@ public class VideosFragment extends Fragment implements ClickListenerInterface {
         intent.putExtra("rasta", rastaList.get(0).getY_key());
         startActivity(intent);
     }
+
+    private void saveUserId(String device_id){
+
+
+
+    }
+
+
 }

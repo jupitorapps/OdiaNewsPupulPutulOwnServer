@@ -2,6 +2,7 @@ package com.pupulputulapps.oriyanewspaper.ui.todayPaper;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,6 +31,7 @@ import com.pupulputulapps.oriyanewspaper.R;
 import com.pupulputulapps.oriyanewspaper.Utils.ClickListenerInterface;
 import com.pupulputulapps.oriyanewspaper.Utils.CustomDialogClass;
 import com.pupulputulapps.oriyanewspaper.Utils.EndlessRecyclerViewScrollListener;
+import com.pupulputulapps.oriyanewspaper.Utils.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -69,9 +71,9 @@ public class HomeFragment extends Fragment implements ClickListenerInterface {
         recyclerView.setLayoutManager(gridLayoutManager);
         recyclerView.hasFixedSize();
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        newsPaperAdapter = new NewsPaperAdapter(this);
+        newsPaperAdapter = new NewsPaperAdapter(this,getContext());
 
-        getNewsPapers("");
+        getNewsPapers("","");
 
         AudienceNetworkAds.initialize(Objects.requireNonNull(getContext()));
         interstitialAd = new InterstitialAd(getContext(), getString(R.string.FAN_Placement_SearchResult_HomeFragment));
@@ -80,12 +82,12 @@ public class HomeFragment extends Fragment implements ClickListenerInterface {
         return root;
     }
 
-    public void getNewsPapers(String searchQuery) {
+    public void getNewsPapers(String searchQuery, final String user_id) {
 
-        homeViewModel.getNewsPaperModelData(searchQuery).observe(getViewLifecycleOwner(), new Observer<List<NewsPaperWebModel>>() {
+        homeViewModel.getNewsPaperModelData(searchQuery, user_id).observe(getViewLifecycleOwner(), new Observer<List<NewsPaperWebModel>>() {
             @Override
             public void onChanged(List<NewsPaperWebModel> newsPaperModels) {
-
+                Log.d(TAG, "onChanged: user id at line 98 of Home Fragment: "+user_id);
                 progressBar.setVisibility(View.GONE);
                 newsListData.clear();
                 newsListData.addAll(newsPaperModels);
@@ -118,17 +120,18 @@ public class HomeFragment extends Fragment implements ClickListenerInterface {
         String ePaperLink = newsPaperModel.getEpaper_link();
         String websiteLink = newsPaperModel.getWebsite_link();
         String newsPaperName = newsPaperModel.getName();
+        int news_paper_id = newsPaperModel.getId();
 
         if (ePaperLink.isEmpty()) {
-            openPaper(websiteLink, newsPaperName);
+            openPaper(websiteLink, newsPaperName, news_paper_id);
         } else if (websiteLink.isEmpty()) {
-            openPaper(ePaperLink, newsPaperName);
+            openPaper(ePaperLink, newsPaperName, news_paper_id);
         } else {
-            newsSelectionDialog(ePaperLink, websiteLink, newsPaperName);
+            newsSelectionDialog(ePaperLink, websiteLink, newsPaperName, news_paper_id);
         }
     }
 
-    private void newsSelectionDialog(final String ePaper, final String website, final String paperName) {
+    private void newsSelectionDialog(final String ePaper, final String website, final String paperName, final int news_paper_id) {
         final CustomDialogClass cdd = new CustomDialogClass(getActivity());
         cdd.show();
         Window window = cdd.getWindow();
@@ -137,7 +140,7 @@ public class HomeFragment extends Fragment implements ClickListenerInterface {
         cdd.ePaper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openPaper(ePaper, paperName);
+                openPaper(ePaper, paperName,news_paper_id);
                 //   Log.d(TAG, "onClick: Epaper Clicked");
                 cdd.dismiss();
 
@@ -147,23 +150,25 @@ public class HomeFragment extends Fragment implements ClickListenerInterface {
         cdd.website.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openPaper(website, paperName);
+                openPaper(website, paperName,news_paper_id);
                 //  Log.d(TAG, "onClick: Website clicked");
                 cdd.dismiss();
             }
         });
     }
 
-    private void openPaper(String paperLink, String paperName) {
+    private void openPaper(String paperLink, String paperName, int news_paper_id) {
 
         if (paperLink.isEmpty()) {
             Toasty.error(Objects.requireNonNull(getContext()), "No Newspaper found, showing all newspapers", Toast.LENGTH_LONG, true).show();
-            getNewsPapers("");
+            getNewsPapers("","");
             return;
         }
         Intent intent = new Intent(getActivity(), NewsAdvancedWebViewActivity.class);
         intent.putExtra("url", paperLink);
         intent.putExtra("paper_name", paperName);
+        intent.putExtra("news_source_id",news_paper_id);
+        intent.putExtra("source","NewsPaperFragment");
         startActivity(intent);
     }
 
@@ -176,6 +181,5 @@ public class HomeFragment extends Fragment implements ClickListenerInterface {
     public void onRssNewsItemClick(LatestNewsModel article) {
         //for latest news fragment
     }
-
 
 }

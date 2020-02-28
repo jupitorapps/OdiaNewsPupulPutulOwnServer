@@ -192,7 +192,6 @@ public class VideoPlayerActivity extends YouTubeBaseActivity implements ClickLis
 
     }
 
-
     private final class MyPlaylistEventListener implements YouTubePlayer.PlaylistEventListener {
         @Override
         public void onNext() {

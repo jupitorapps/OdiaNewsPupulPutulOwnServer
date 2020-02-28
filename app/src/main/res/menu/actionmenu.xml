@@ -7,12 +7,18 @@
         android:orderInCategory="1"
         android:title="Search"
         android:icon="@drawable/ic_search_black_24dp"
-        app:showAsAction="always"
+        app:showAsAction="ifRoom"
         app:actionViewClass="androidx.appcompat.widget.SearchView" />
+    <item
+        android:id="@+id/action_favourite"
+        android:orderInCategory="2"
+        android:title="Fav"
+        android:icon="@drawable/star_fill"
+        app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/action_about_app"
-        android:orderInCategory="2"
+        android:orderInCategory="3"
         android:title="@string/action_about_app"
         android:icon="@drawable/action_info_icon"
         app:showAsAction="ifRoom" />
