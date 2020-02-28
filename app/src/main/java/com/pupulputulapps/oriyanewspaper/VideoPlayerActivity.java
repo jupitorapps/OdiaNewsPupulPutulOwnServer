@@ -307,13 +307,20 @@ public class VideoPlayerActivity extends YouTubeBaseActivity implements ClickLis
 
     @Override
     protected void onStop() {
-        super.onStop();
         youTubePlayer1.release();
+        super.onStop();
+
     }
 
     @Override
     protected void onDestroy() {
-        super.onDestroy();
         youTubePlayer1.release();
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onPause() {
+        youTubePlayer1.release();
+        super.onPause();
     }
 }

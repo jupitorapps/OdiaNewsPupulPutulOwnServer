@@ -118,14 +118,10 @@ public class NewsAdvancedWebViewActivity extends AppCompatActivity implements Ad
         if (item.getItemId() == R.id.action_fav) {
             updateFavInServer(Utils.getUserId(getApplicationContext()), source_news_id,item);
 
-//            if (item.getIcon().getConstantState() == getResources().getDrawable(R.drawable.star_blank).getConstantState()) {
-//                item.setIcon(R.drawable.star_fill);
-//            } else {
-//                item.setIcon(R.drawable.star_blank);
-//            }
-
         } else {
-            super.onBackPressed();
+           // super.onBackPressed();
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
             Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(false);
         }
 
@@ -196,6 +192,9 @@ public class NewsAdvancedWebViewActivity extends AppCompatActivity implements Ad
             return;
         }
         super.onBackPressed();
+//        Intent intent = new Intent(this, MainActivity.class);
+//        startActivity(intent);
+
     }
 
 
@@ -229,7 +228,6 @@ public class NewsAdvancedWebViewActivity extends AppCompatActivity implements Ad
 
     }
 
-
     private static void checkFavNewsPaper(String user_id, int news_paper_id, final MenuItem item){
         ApiServiceWeb apiService = ApiClientWeb.getRetrofit().create(ApiServiceWeb.class);
         Call<String> call = apiService.checkFavNewsPaper("news_odia", user_id, news_paper_id);
@@ -239,7 +237,7 @@ public class NewsAdvancedWebViewActivity extends AppCompatActivity implements Ad
                 if (response.body() != null) {
 
                     Log.d(TAG, "onResponse: "+response.body());
-                    if (response.body().contains("0")){
+                    if (response.body().contains("1")){
                         item.setIcon(R.drawable.star_fill);
                     } else {
                         item.setIcon(R.drawable.star_blank);

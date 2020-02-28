@@ -10,7 +10,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -22,11 +21,8 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.facebook.ads.Ad;
-import com.facebook.ads.AdError;
 import com.facebook.ads.AudienceNetworkAds;
 import com.facebook.ads.InterstitialAd;
-import com.facebook.ads.InterstitialAdExtendedListener;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -52,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String PREF_UNIQUE_ID = "PREF_UNIQUE_ID";
 
     private Boolean nowShowingFavNews = false;
+    private String launchedFrom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public synchronized static String getUniqueID(Context context) {
+    public synchronized static void getUniqueID(Context context) {
         if (uniqueID == null) {
             SharedPreferences sharedPrefs = context.getSharedPreferences(
                     PREF_UNIQUE_ID, Context.MODE_PRIVATE);
@@ -105,7 +102,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         Log.d("Main Activity TAGG", "Unique id: " + uniqueID);
-        return uniqueID;
     }
 
     @Override
@@ -223,22 +219,8 @@ if (id ==R.id.action_favourite){
 
     @Override
     public void onBackPressed() {
-        if (doubleBackToExitPressedOnce) {
+
             super.onBackPressed();
-
-        }
-
-        this.doubleBackToExitPressedOnce = true;
-        Toasty.info(getApplicationContext(), "Double Press to Exit").show();
-
-        new Handler().postDelayed(new Runnable() {
-
-            @Override
-            public void run() {
-                doubleBackToExitPressedOnce = false;
-            }
-        }, 2000);
-
 
     }
 

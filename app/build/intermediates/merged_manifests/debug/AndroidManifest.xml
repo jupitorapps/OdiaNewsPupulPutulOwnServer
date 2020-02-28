@@ -28,7 +28,9 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
-        <activity android:name="com.pupulputulapps.oriyanewspaper.AboutActivity" />
+        <activity
+            android:name="com.pupulputulapps.oriyanewspaper.AboutActivity"
+            android:launchMode="singleTask" />
         <activity
             android:name="com.pupulputulapps.oriyanewspaper.NewsAdvancedWebViewActivity"
             android:launchMode="singleTop" />
